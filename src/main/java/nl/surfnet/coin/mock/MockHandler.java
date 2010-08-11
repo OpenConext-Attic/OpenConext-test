@@ -70,9 +70,27 @@ public class MockHandler extends AbstractHandler {
      * javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, int)
      */
     public void handle(String target, HttpServletRequest request, HttpServletResponse response, int dispatch) throws IOException, ServletException {
-        response.addHeader("Content-Type", "text/xml");
         invariant();
+        addContentHeader(response);
         respond(response);
+    }
+
+    /**
+     * @param response
+     */
+    private void addContentHeader(HttpServletResponse response) {
+        String contentType;
+        String description = responseResource.getDescription();
+        // poor man's solution, but it works for most Resource implementation
+        if (description.contains("json")) {
+            contentType = "application/json";
+        } else if (description.contains("xml")) {
+            contentType = "text/xml";
+        } else {
+            contentType = "text/html";
+        }
+        response.addHeader("Content-Type", contentType);
+
     }
 
     /*
