@@ -32,13 +32,12 @@ public class MockSoapServerTest extends AbstractMockHttpServerTest {
     private boolean securityHandlerHit;
 
     /**
-     * Test the MockSoapServer. In real test cases there will be a framework like JAX-WS responsible
-     * for making the SOAP calls.
+     * Test the MockHttpServer. 
      * 
      * @throws Exception
      */
     @Test
-    public void testMockSoapHappyFlow() throws Exception {
+    public void testMockHappyFlow() throws Exception {
         ClassPathResource responseResource = new ClassPathResource("test.json");
         super.setResponseResource(responseResource);
         HttpClient client = new DefaultHttpClient();
