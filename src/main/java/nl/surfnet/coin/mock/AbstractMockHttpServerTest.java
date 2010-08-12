@@ -10,7 +10,7 @@ import org.springframework.core.io.Resource;
 
 /**
  * Tests subclassing {@link AbstractMockHttpServerTest} can communicate with a mock Http endpoint
- * that behavious like a real SOAP server.
+ * that behavious like a real server.
  * 
  * The idea behind this class is that http responses can be tested (regardless of the input request).
  * 
@@ -34,7 +34,7 @@ public abstract class AbstractMockHttpServerTest {
     }
 
     /**
-     * Set the expected response on the soapHandler
+     * Set the expected response on the Handler
      * 
      * @param responseResource the resource of the file containing the xml response
      */
