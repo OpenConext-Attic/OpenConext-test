@@ -10,7 +10,7 @@
 	<properties>
 		<application.distributionManagement.siteUrl>file:///var/opt/maven/sites/coin-test/${version}</application.distributionManagement.siteUrl>
 		<spring.version>3.0.3.RELEASE</spring.version>
-		<jetty.version>6.1.9</jetty.version>
+		<jetty.version>6.1.22</jetty.version>
 		<httpclient.version>4.1-alpha2</httpclient.version>
 	</properties>
 
