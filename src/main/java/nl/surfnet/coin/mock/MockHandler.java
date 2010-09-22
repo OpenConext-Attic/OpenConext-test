@@ -78,6 +78,7 @@ public class MockHandler extends AbstractHandler {
       HttpServletResponse response, int dispatch) throws IOException,
       ServletException {
     invariant();
+    String requestURI = request.getRequestURI();
     addContentHeader(response);
     respond(response);
   }
