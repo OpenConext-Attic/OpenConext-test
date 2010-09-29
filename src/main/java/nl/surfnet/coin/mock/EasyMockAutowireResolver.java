@@ -28,7 +28,7 @@ public class EasyMockAutowireResolver extends AutowiredAnnotationBeanPostProcess
     public PropertyValues postProcessPropertyValues(PropertyValues pvs, PropertyDescriptor[] pds, Object bean, String beanName) throws BeansException {
         try {
             return super.postProcessPropertyValues(pvs, pds, bean, beanName);
-        } catch (BeanCreationException ex) {
+        } catch (Throwable ex) {
             // this means that we have to construct a nice EasyMock and inject it
             Throwable t = ex;
             while (t.getCause() != null) {
