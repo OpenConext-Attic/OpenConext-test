@@ -47,13 +47,22 @@ public class MockHandler extends AbstractHandler {
   /*
    * Write the contents of the provided file to the response
    */
-  private void respond(HttpServletResponse response) throws IOException {
+  private void respond(HttpServletResponse response, HttpServletRequest request)
+      throws IOException {
     ServletOutputStream outputStream = response.getOutputStream();
-
-    InputStream inputStream = responseResource.getInputStream();
+    String requestURI = request.getRequestURI();
+    InputStream inputStream = getResponseInputStream(requestURI);
 
     IOUtils.copy(inputStream, outputStream);
     outputStream.flush();
+  }
+
+  /**
+   * Return the result of next call
+   */
+  protected InputStream getResponseInputStream(String requestURI)
+      throws IOException {
+    return responseResource.getInputStream();
   }
 
   /**
@@ -78,9 +87,8 @@ public class MockHandler extends AbstractHandler {
       HttpServletResponse response, int dispatch) throws IOException,
       ServletException {
     invariant();
-    String requestURI = request.getRequestURI();
     addContentHeader(response);
-    respond(response);
+    respond(response, request);
   }
 
   /**

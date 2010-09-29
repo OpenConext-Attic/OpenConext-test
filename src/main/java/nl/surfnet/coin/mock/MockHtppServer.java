@@ -5,6 +5,7 @@ package nl.surfnet.coin.mock;
 
 import org.mortbay.jetty.Server;
 import org.mortbay.jetty.bio.SocketConnector;
+import org.mortbay.jetty.handler.AbstractHandler;
 
 /**
  * Very simple {@link Server} to mock http traffic
@@ -31,8 +32,15 @@ public class MockHtppServer {
     SocketConnector connector = new SocketConnector();
     connector.setPort(port);
     this.server.addConnector(connector);
-    this.handler = new MockHandler(server);
+    this.handler = createHandler(server);
     this.server.addHandler(handler);
+  }
+
+  /**
+   * Create a handler for the server
+   */
+  protected MockHandler createHandler(Server server) {
+    return new MockHandler(server);
   }
 
   /**
@@ -40,7 +48,23 @@ public class MockHtppServer {
    * when the test class finishes
    */
   public void startServer() {
-    new Thread(new Runnable() {
+    doStartServer(true);
+  }
+
+  /**
+   * Start the server in a blocking mode. The method does not return untill the
+   * thread is killed
+   */
+  public void startServerSync() {
+    doStartServer(false);
+  }
+
+  /**
+   * Start the server in a non-blocking mode. The separate thread will be killed
+   * when the test class finishes
+   */
+  public void doStartServer(boolean async) {
+    Thread thread = new Thread(new Runnable() {
       @Override
       public void run() {
         try {
@@ -52,9 +76,14 @@ public class MockHtppServer {
           throw new RuntimeException(e);
         }
       }
-    }).start();
-    // give the server some time to start
-    sleep(150);
+    });
+    if (async) {
+      thread.start();
+      // give the server some time to start
+      sleep(150);
+    } else {
+      thread.run();
+    }
   }
 
   /**
