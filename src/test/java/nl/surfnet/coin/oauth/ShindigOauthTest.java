@@ -32,7 +32,7 @@ public class ShindigOauthTest extends AbstractMockHttpServerTest {
   private static final String PORT = "8088";
   private final static String consumerKey = "http://localhost:8080/samplecontainer/examples/SocialHelloWorld.xml";
   private final static String consumerSecret = "mysecret";
-  private final static String openSocialId = "urn:collab:person:surfnet.nl:hansz"; // TODO
+  private final static String openSocialId = "urn:collab:person:surfnet.nl:hansz"; 
 
   @Test
   public void testOAuthClient() throws RequestException, IOException {
