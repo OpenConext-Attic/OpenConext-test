@@ -17,7 +17,7 @@
 		<oauth.version>20090825</oauth.version>
 		<orgjson.version>20080701</orgjson.version>
 	</properties>
-<scm>
+	<scm>
 		<connection>https://svn.surfnet.nl/svn/coin-gui/coin-teams/trunk/coin-teams-war</connection>
 	</scm>
 	<distributionManagement>
