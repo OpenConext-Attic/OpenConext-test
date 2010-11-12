@@ -42,10 +42,6 @@ public class ShindigOauthTest extends AbstractMockHttpServerTest {
     provider.setRpcEndpoint("http://localhost:" + PORT + "/social/rpc/");
     provider.setVersion("0.9");
 
-    // provider.setAuthorizeUrl("http://localhost:9090/oauth-provider/authorize");
-    // provider.setAccessTokenUrl("http://localhost:9090/oauth-provider/access_token");
-    // provider.setRequestTokenUrl("http://localhost:9090/oauth-provider/request_token");
-
     AuthScheme scheme = new OAuth2LeggedScheme(consumerKey, consumerSecret,
         openSocialId);
 
