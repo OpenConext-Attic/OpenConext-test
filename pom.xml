@@ -13,7 +13,7 @@
 		<jetty.version>6.1.22</jetty.version>
 		<httpclient.version>4.0.1</httpclient.version>
 		<opensocialclient.version>1.2-coin</opensocialclient.version>
-		
+
 	</properties>
 	<scm>
 		<connection>https://svn.surfnet.nl/svn/coin-gui/coin-teams/trunk/coin-teams-war</connection>
@@ -70,6 +70,20 @@
 					<source>1.6</source>
 					<target>1.6</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
