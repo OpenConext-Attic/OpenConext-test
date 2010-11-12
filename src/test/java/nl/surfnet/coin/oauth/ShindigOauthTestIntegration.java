@@ -12,10 +12,12 @@ import org.opensocial.RequestException;
 import org.opensocial.Response;
 import org.opensocial.auth.AuthScheme;
 import org.opensocial.auth.OAuth2LeggedScheme;
+import org.opensocial.models.Activity;
 import org.opensocial.models.Group;
 import org.opensocial.models.Person;
 import org.opensocial.providers.Provider;
 import org.opensocial.providers.ShindigProvider;
+import org.opensocial.services.ActivitiesService;
 import org.opensocial.services.GroupsService;
 import org.opensocial.services.PeopleService;
 
@@ -74,6 +76,16 @@ public class ShindigOauthTestIntegration {
     List<Group> groups = response.getEntries();
     int size = groups.size();
     assertEquals(_EXPECTED_GROUP_COUNT, size);
+
+    Activity activity = new Activity();
+    activity.setBody("body_test");
+    activity.setBodyId("body_id");
+    activity.setField("externalId", "groupId");
+    activity.setField("url", "abcdef");
+    activity.setTitle("title");
+    activity.setTitleId("titleId");
+    request = ActivitiesService.createActivity(activity);
+    response = client.send(request);
 
   }
 
