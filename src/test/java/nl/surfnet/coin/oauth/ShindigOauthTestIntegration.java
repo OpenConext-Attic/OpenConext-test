@@ -30,20 +30,17 @@ import org.opensocial.services.PeopleService;
  */
 public class ShindigOauthTestIntegration {
 
-  // private static final int _EXPECTED_GROUP_COUNT = 8;
-  // private static final String BASE_URL =
-  // "https://gadgets.dev.coin.surf.net/social/";
-  // private final static String CONSUMER_KEY = "http://uva.nl/somegadget.xml";
-  // private final static String CONSUMER_SECRET =
-  // "5C2F6217-A1F1-42A2-BEFF-D6BEEEE0CA0C";
-  // private final static String OPEN_SOCIAL_ID =
-  // "urn:collab:person:surfnet.nl:hansz";
-
-  private static final int _EXPECTED_GROUP_COUNT = 4;
-  private static final String BASE_URL = "http://localhost:8080/social/";
+  private static final int _EXPECTED_GROUP_COUNT = 8;
+  private static final String BASE_URL = "https://gadgets.dev.coin.surf.net/social/";
   private final static String CONSUMER_KEY = "http://uva.nl/somegadget.xml";
-  private final static String CONSUMER_SECRET = "mysecret";
-  private final static String OPEN_SOCIAL_ID = "john.doe";
+  private final static String CONSUMER_SECRET = "5C2F6217-A1F1-42A2-BEFF-D6BEEEE0CA0C";
+  private final static String OPEN_SOCIAL_ID = "urn:collab:person:surfnet.nl:hansz";
+
+  // private static final int _EXPECTED_GROUP_COUNT = 4;
+  // private static final String BASE_URL = "http://localhost:8080/social/";
+  // private final static String CONSUMER_KEY = "http://uva.nl/somegadget.xml";
+  // private final static String CONSUMER_SECRET = "mysecret";
+  // private final static String OPEN_SOCIAL_ID = "john.doe";
 
   @Test
   public void testOAuthClient() throws RequestException, IOException {
