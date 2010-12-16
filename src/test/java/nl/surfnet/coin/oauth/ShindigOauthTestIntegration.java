@@ -30,9 +30,9 @@ import org.opensocial.services.PeopleService;
  */
 public class ShindigOauthTestIntegration {
 
-  private static final int _EXPECTED_GROUP_COUNT = 9;
+  private static final int _EXPECTED_GROUP_COUNT = 7;
   private static final String BASE_URL = "https://gadgets.dev.coin.surf.net/social/";
-   /*
+  /*
    * Proteon key-secret
    */
   private final static String CONSUMER_KEY = "https://coin-test.surfnet.proteon.nl/.someGadget";
