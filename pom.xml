@@ -13,7 +13,6 @@
 		<jetty.version>6.1.22</jetty.version>
 		<httpclient.version>4.0.1</httpclient.version>
 		<opensocialclient.version>1.2-coin</opensocialclient.version>
-
 	</properties>
 	<scm>
 		<connection>https://svn.surfnet.nl/svn/coin-gui/coin-teams/trunk/coin-teams-war</connection>
@@ -84,6 +83,14 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.atlassian.maven.plugins</groupId>
+				<artifactId>maven-clover2-plugin</artifactId>
+				<version>3.0.2</version>
+				<configuration>
+				   <licenseLocation>clover.license</licenseLocation>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
