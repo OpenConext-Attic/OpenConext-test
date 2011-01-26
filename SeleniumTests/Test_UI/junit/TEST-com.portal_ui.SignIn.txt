@@ -1,0 +1,15 @@
+Testsuite: com.portal_ui.SignIn
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 41.03 sec
+
+Testcase: testSignIn took 40.852 sec
+	Caused an ERROR
+ERROR: Couldn't access document.body.  Is this HTML page fully loaded?
+com.thoughtworks.selenium.SeleniumException: ERROR: Couldn't access document.body.  Is this HTML page fully loaded?
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getBoolean(HttpCommandProcessor.java:335)
+	at com.thoughtworks.selenium.DefaultSelenium.isTextPresent(DefaultSelenium.java:517)
+	at com.portal_ui.SignIn.testSignIn(SignIn.java:22)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+
