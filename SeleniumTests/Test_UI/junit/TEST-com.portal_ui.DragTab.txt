@@ -1,0 +1,13 @@
+Testsuite: com.portal_ui.DragTab
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 54.732 sec
+
+Testcase: testDragTab took 54.553 sec
+	Caused an ERROR
+ERROR: Element //*[@title='remove from menu'] not found
+com.thoughtworks.selenium.SeleniumException: ERROR: Element //*[@title='remove from menu'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:177)
+	at com.portal_ui.DragTab.testDragTab(DragTab.java:27)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+

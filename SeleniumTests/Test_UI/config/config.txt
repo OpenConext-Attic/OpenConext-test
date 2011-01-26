@@ -1,0 +1,11 @@
+url = https://gui.dev.coin.surf.net
+browser = firefox
+# chrome does work, but there are some issues with safari
+speed = 2000
+# when the speed is decreased some test will fail because of timing issues
+path = coin
+# User name and password for SURFguest-test account
+# four logins are available username conexttest, conexttest1, conexttest2 and conexttest3
+# password is surfconext and email is conexttest@gmail.com (same password)
+username = conexttest
+password = surfconext
