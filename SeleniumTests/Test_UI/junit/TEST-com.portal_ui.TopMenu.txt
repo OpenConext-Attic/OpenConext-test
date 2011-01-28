@@ -1,4 +1,4 @@
 Testsuite: com.portal_ui.TopMenu
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 72.686 sec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 42.718 sec
 
-Testcase: testTopMenu took 72.511 sec
+Testcase: testTopMenu took 42.521 sec

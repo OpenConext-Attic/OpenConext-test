@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="host-30-1.eduroamers.nl" name="com.portal_ui.TopMenu" tests="1" time="72.686" timestamp="2011-01-26T12:34:50">
+<testsuite errors="0" failures="0" hostname="dhcp-62.surfnet.nl" name="com.portal_ui.TopMenu" tests="1" time="42.718" timestamp="2011-01-28T12:26:03">
   <properties>
     <property name="java.vendor" value="Apple Inc."></property>
-    <property name="env.JAVA_MAIN_CLASS_3837" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner"></property>
     <property name="sun.java.launcher" value="SUN_STANDARD"></property>
     <property name="eclipse.pdebuild.templates" value="/Applications/eclipse/plugins/org.eclipse.pde.build_3.6.0.v20100603/templates//"></property>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler"></property>
@@ -12,8 +11,8 @@
     <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."></property>
     <property name="ant.home" value="/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145"></property>
     <property name="java.runtime.version" value="1.6.0_22-b04-307-10M3261"></property>
-    <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-RPm0KL/Render"></property>
-    <property name="env.DISPLAY" value="/tmp/launch-P0knW7/org.x:0"></property>
+    <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-HtWElM/Render"></property>
+    <property name="env.DISPLAY" value="/tmp/launch-F1NQsE/org.x:0"></property>
     <property name="user.name" value="femke"></property>
     <property name="env.USER" value="femke"></property>
     <property name="env.SHELL" value="/bin/bash"></property>
@@ -21,9 +20,9 @@
     <property name="awt.nativeDoubleBuffering" value="true"></property>
     <property name="env.PATH" value="/usr/bin:/bin:/usr/sbin:/sbin"></property>
     <property name="user.language" value="en"></property>
-    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_3837" value="1"></property>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"></property>
     <property name="ant.file.Test_UI" value="/Users/femke/Documents/workspace/Test_UI/build.xml"></property>
+    <property name="env.APP_ICON_452" value="../Resources/Eclipse.icns"></property>
     <property name="ant.project.name" value="Test_UI"></property>
     <property name="java.version" value="1.6.0_22"></property>
     <property name="user.timezone" value=""></property>
@@ -51,13 +50,13 @@
     <property name="awt.toolkit" value="apple.awt.CToolkit"></property>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"></property>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"></property>
-    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_3422" value="1"></property>
     <property name="eclipse.pdebuild.scripts" value="/Applications/eclipse/plugins/org.eclipse.pde.build_3.6.0.v20100603/scripts//"></property>
     <property name="user.home" value="/Users/femke"></property>
     <property name="target" value="1.6"></property>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."></property>
     <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"></property>
     <property name="java.vendor.url" value="http://www.apple.com/"></property>
+    <property name="env.JAVA_MAIN_CLASS_1400" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner"></property>
     <property name="java.vm.vendor" value="Apple Inc."></property>
     <property name="gopherProxySet" value="false"></property>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"></property>
@@ -71,21 +70,23 @@
     <property name="debuglevel" value="source,lines,vars"></property>
     <property name="env.HOME" value="/Users/femke"></property>
     <property name="env.ANT_HOME" value="/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145"></property>
-    <property name="java.io.tmpdir" value="/var/folders/1P/1PjdQBD1HmKbqVI3QqJVB++++TI/-Tmp-/"></property>
     <property name="eclipse.pdebuild.home" value="/Applications/eclipse/plugins/org.eclipse.pde.build_3.6.0.v20100603/.//"></property>
+    <property name="java.io.tmpdir" value="/var/folders/1P/1PjdQBD1HmKbqVI3QqJVB++++TI/-Tmp-/"></property>
     <property name="java.vendor.url.bug" value="http://bugreport.apple.com/"></property>
-    <property name="env.SSH_AUTH_SOCK" value="/tmp/launch-jR3hSJ/Listeners"></property>
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/launch-HeNWH5/Listeners"></property>
     <property name="env.COMMAND_MODE" value="unix2003"></property>
+    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_452" value="1"></property>
     <property name="mrj.build" value="10M3261"></property>
     <property name="os.arch" value="x86_64"></property>
     <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"></property>
     <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext"></property>
     <property name="user.dir" value="/Users/femke/Documents/workspace/Test_UI"></property>
     <property name="mrj.version" value="1060.1.6.0_22-307"></property>
+    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_1400" value="1"></property>
     <property name="line.separator" value="
 "></property>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"></property>
-    <property name="env.APP_ICON_3422" value="../Resources/Eclipse.icns"></property>
+    <property name="org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer0" value="/var/folders/1P/1PjdQBD1HmKbqVI3QqJVB++++TI/-Tmp-/null1355841780"></property>
     <property name="basedir" value="/Users/femke/Documents/workspace/Test_UI"></property>
     <property name="ant.java.version" value="1.6"></property>
     <property name="ant.core.lib" value="/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant.jar"></property>
@@ -93,7 +94,7 @@
     <property name="file.encoding" value="MacRoman"></property>
     <property name="java.specification.version" value="1.6"></property>
   </properties>
-  <testcase classname="com.portal_ui.TopMenu" name="testTopMenu" time="72.512"></testcase>
+  <testcase classname="com.portal_ui.TopMenu" name="testTopMenu" time="42.522"></testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -23,7 +23,7 @@ public class DragTab extends BaseTest {
         selenium.click("AllTabsButton");
         selenium.click("AllTabsButton");
         selenium.waitForPageToLoad("30000");
-        selenium.dragAndDrop("//*[@title='DragTab']", "200,70");
+        selenium.dragAndDrop("//*[@title='DragTab']", "400,30");
         selenium.click("//*[@title='remove from menu']");
         waitForElement("//div[8]/div[3]/div/button[1]");
         selenium.click("//div[8]/div[3]/div/button[1]");
