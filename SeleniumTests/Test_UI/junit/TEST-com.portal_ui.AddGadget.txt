@@ -1,4 +1,4 @@
 Testsuite: com.portal_ui.AddGadget
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 131.62 sec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 72.633 sec
 
-Testcase: testAddGadget took 131.429 sec
+Testcase: testAddGadget took 72.46 sec

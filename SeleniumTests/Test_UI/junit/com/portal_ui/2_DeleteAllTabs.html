@@ -1,13 +1,13 @@
 <html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<title>Unit Test Results: com.portal_ui.DragTab</title>
+<title>Unit Test Results: com.portal_ui.DeleteAllTabs</title>
 <link rel="stylesheet" type="text/css" title="Style" href="../../stylesheet.css">
 <script type="text/javascript" language="JavaScript">
         var TestCases = new Array();
         var cur;
         
-    cur = TestCases['com.portal_ui.DragTab'] = new Array();
+    cur = TestCases['com.portal_ui.DeleteAllTabs'] = new Array();
     
         cur['ant.core.lib'] = '/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant.jar';
     
@@ -55,11 +55,11 @@
     
         cur['env.HOME'] = '/Users/femke';
     
-        cur['env.JAVA_MAIN_CLASS_601'] = 'org.eclipse.ant.internal.launching.remote.InternalAntRunner';
+        cur['env.JAVA_MAIN_CLASS_1400'] = 'org.eclipse.ant.internal.launching.remote.InternalAntRunner';
+    
+        cur['env.JAVA_STARTED_ON_FIRST_THREAD_1400'] = '1';
     
         cur['env.JAVA_STARTED_ON_FIRST_THREAD_452'] = '1';
-    
-        cur['env.JAVA_STARTED_ON_FIRST_THREAD_601'] = '1';
     
         cur['env.LOGNAME'] = 'femke';
     
@@ -142,6 +142,8 @@
         cur['mrj.build'] = '10M3261';
     
         cur['mrj.version'] = '1060.1.6.0_22-307';
+    
+        cur['org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer0'] = '/var/folders/1P/1PjdQBD1HmKbqVI3QqJVB++++TI/-Tmp-/null1355841780';
     
         cur['os.arch'] = 'x86_64';
     
@@ -226,13 +228,13 @@
 </tr>
 </table>
 <hr size="1">
-<h3>Class com.portal_ui.DragTab</h3>
+<h3>Class com.portal_ui.DeleteAllTabs</h3>
 <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
 <tr valign="top">
 <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
 </tr>
 <tr valign="top" class="Error">
-<td><a title="Display all tests" href="3_DragTab.html">DragTab</a></td><td><a title="Display all tests" href="3_DragTab.html">1</a></td><td><a title="Display only errors" href="3_DragTab-errors.html">1</a></td><td>0</td><td>34.871</td><td>2011-01-28T09:28:26</td><td>dhcp-62.surfnet.nl</td>
+<td><a title="Display all tests" href="2_DeleteAllTabs.html">DeleteAllTabs</a></td><td><a title="Display all tests" href="2_DeleteAllTabs.html">1</a></td><td><a title="Display only errors" href="2_DeleteAllTabs-errors.html">1</a></td><td>0</td><td>64.871</td><td>2011-01-28T12:27:52</td><td>dhcp-62.surfnet.nl</td>
 </tr>
 </table>
 <h2>Tests</h2>
@@ -241,13 +243,13 @@
 <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
 </tr>
 <tr valign="top" class="Error">
-<td><a name="testDragTab"></a>testDragTab</td><td>Error</td><td>ERROR: Element //*[@title='remove from menu'] not found<br>
+<td><a name="testDeleteAllTabs"></a>testDeleteAllTabs</td><td>Error</td><td>Timeout while waiting for element //div[8]/div[3]/div/button[1]<br>
 <br>
-<code>com.thoughtworks.selenium.SeleniumException: ERROR: Element //*[@title='remove from menu'] not found<br/>	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)<br/>	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)<br/>	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:177)<br/>	at com.portal_ui.DragTab.testDragTab(DragTab.java:27)<br/>	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)<br/></code></td><td>34.666</td>
+<code>com.thoughtworks.selenium.Wait$WaitTimedOutException: Timeout while waiting for element //div[8]/div[3]/div/button[1]<br/>	at com.thoughtworks.selenium.Wait.wait(Wait.java:81)<br/>	at com.thoughtworks.selenium.Wait.wait(Wait.java:48)<br/>	at com.portal_ui.BaseTest.waitForElement(BaseTest.java:28)<br/>	at com.portal_ui.DeleteAllTabs.testDeleteAllTabs(DeleteAllTabs.java:29)<br/>	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)<br/></code></td><td>64.673</td>
 </tr>
 </table>
 <div class="Properties">
-<a href="javascript:displayProperties('com.portal_ui.DragTab');">
+<a href="javascript:displayProperties('com.portal_ui.DeleteAllTabs');">
                     Properties &raquo;
                 </a>
 </div>

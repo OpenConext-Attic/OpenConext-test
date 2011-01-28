@@ -10,7 +10,7 @@ public class AddGadget extends BaseTest {
         selenium.click("//img[contains(@src,'https://www.surfguest.nl/img/surfnet_logo.gif')]");
         selenium.click("LoginSubmit");
         selenium.waitForPageToLoad("90000");
-        File f = new File("config/config.txt");
+        File f = new File("config" + File.separator + "config.txt");
         selenium.type("username", Utils.getConfigEntry(f, "username"));
         selenium.type("password", Utils.getConfigEntry(f, "password"));
         waitForElement("//input[@value='   Login   ']");

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="dhcp-62.surfnet.nl" name="com.portal_ui.SignIn" tests="1" time="34.327" timestamp="2011-01-28T12:22:29">
+<testsuite errors="1" failures="0" hostname="dhcp-62.surfnet.nl" name="com.portal_ui.DeleteAllTabs" tests="1" time="64.871" timestamp="2011-01-28T12:27:52">
   <properties>
     <property name="java.vendor" value="Apple Inc."></property>
     <property name="sun.java.launcher" value="SUN_STANDARD"></property>
@@ -94,7 +94,15 @@
     <property name="file.encoding" value="MacRoman"></property>
     <property name="java.specification.version" value="1.6"></property>
   </properties>
-  <testcase classname="com.portal_ui.SignIn" name="testSignIn" time="34.131"></testcase>
+  <testcase classname="com.portal_ui.DeleteAllTabs" name="testDeleteAllTabs" time="64.673">
+    <error message="Timeout while waiting for element //div[8]/div[3]/div/button[1]" type="com.thoughtworks.selenium.Wait$WaitTimedOutException">com.thoughtworks.selenium.Wait$WaitTimedOutException: Timeout while waiting for element //div[8]/div[3]/div/button[1]
+	at com.thoughtworks.selenium.Wait.wait(Wait.java:81)
+	at com.thoughtworks.selenium.Wait.wait(Wait.java:48)
+	at com.portal_ui.BaseTest.waitForElement(BaseTest.java:28)
+	at com.portal_ui.DeleteAllTabs.testDeleteAllTabs(DeleteAllTabs.java:29)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+</error>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
