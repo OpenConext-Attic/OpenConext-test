@@ -38,10 +38,9 @@
 			<classpath refid="Test_UI.classpath" />
 		</javac>
 	</target>
-	
 	<target name="Test_UI" depends="build">
 		<mkdir dir="${junit.output.dir}" />
-		<junit fork="yes" printsummary="withOutAndErr">
+		<junit fork="yes" printsummary="withOutAndErr" >
 			<formatter usefile="true" type="plain" />
 			<formatter type="xml" />
 			<test name="com.portal_ui.SignIn" todir="${junit.output.dir}" />
@@ -49,10 +48,10 @@
 			<test name="com.portal_ui.AddGadget" todir="${junit.output.dir}" />
 			<test name="com.portal_ui.Tabs" todir="${junit.output.dir}" />
 			<test name="com.portal_ui.TopMenu" todir="${junit.output.dir}" />
-			<!--<test name="com.portal_ui.DragDrop" todir="${junit.output.dir}" />-->
 			<test name="com.portal_ui.AssignTeam" todir="${junit.output.dir}" />
+			<!--Insert new test above this line. You can copy the last test and change the name of the test-->
 			<test name="com.portal_ui.DeleteAllTabs" todir="${junit.output.dir}" />
-			<classpath refid="Test_UI.classpath" />
+						<classpath refid="Test_UI.classpath" />
 		</junit>
 	</target>
 	<target name="junitreport" depends="Test_UI">
