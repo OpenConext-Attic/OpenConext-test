@@ -14,6 +14,7 @@ import org.opensocial.auth.AuthScheme;
 import org.opensocial.auth.OAuth2LeggedScheme;
 import org.opensocial.models.Activity;
 import org.opensocial.models.Group;
+import org.opensocial.models.Model;
 import org.opensocial.models.Person;
 import org.opensocial.providers.Provider;
 import org.opensocial.providers.ShindigProvider;
@@ -35,9 +36,13 @@ public class ShindigOauthTestIntegration {
   /*
    * Proteon key-secret
    */
-  private final static String CONSUMER_KEY = "https://coin-test.surfnet.proteon.nl/.someGadget";
-  private final static String CONSUMER_SECRET = "4FA60498-9204-4D6A-929A-8DC70822F9CD";
-  
+  // private final static String CONSUMER_KEY =
+  // "http://conext.proteon.nl/.SomeGadget";
+  // private final static String CONSUMER_SECRET =
+  // "4FA60498-9204-4D6A-929A-8DC70822F9CD";
+
+  private final static String CONSUMER_KEY = "http://coin.edia.nl.SomeGadget";
+  private final static String CONSUMER_SECRET = "5C2F6217-A1F1-42A2-BEFF-D6BEEEE0CA0C";
   private final static String OPEN_SOCIAL_ID = "urn:collab:person:surfnet.nl:hansz";
 
   @Test
@@ -65,7 +70,7 @@ public class ShindigOauthTestIntegration {
     String id = friends.get(0).getId();
     assertEquals(OPEN_SOCIAL_ID, id);
 
-    request = GroupsService.getGroups(id);
+    request = GroupsService.getGroups(OPEN_SOCIAL_ID);
     response = client.send(request);
 
     List<Group> groups = response.getEntries();
@@ -81,7 +86,8 @@ public class ShindigOauthTestIntegration {
     activity.setTitleId("titleId");
     request = ActivitiesService.createActivity(activity);
     response = client.send(request);
-
+    List<Model> entries = response.getEntries();
+    assertEquals(1,entries.size());
   }
 
 }
