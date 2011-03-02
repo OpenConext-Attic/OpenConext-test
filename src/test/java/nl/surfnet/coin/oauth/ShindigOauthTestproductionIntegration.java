@@ -31,17 +31,17 @@ import org.opensocial.services.PeopleService;
  */
 public class ShindigOauthTestproductionIntegration {
 
-  private static final int _EXPECTED_GROUP_COUNT = 7;
+  private static final int _EXPECTED_GROUP_COUNT = 2;
   private static final String BASE_URL = "https://os.surfconext.nl/social/";
   /*
    * Proteon key-secret
    */
-  // private final static String CONSUMER_KEY =
-  // "http://conext.proteon.nl/.SomeGadget";
-  // private final static String CONSUMER_SECRET =
-  // "4FA60498-9204-4D6A-929A-8DC70822F9CD";
+//   private final static String CONSUMER_KEY =
+//   "http://conext.proteon.nl/.SomeGadget";
+//   private final static String CONSUMER_SECRET =
+//   "ap9ajn2mKuXCA";
 
-  private final static String CONSUMER_KEY = "http://alfresco-coin.igi.nl/";
+  private final static String CONSUMER_KEY = "http://alfresco-coin.igi.nl/.Somegadget";
   private final static String CONSUMER_SECRET = "796C0A3C-E2DB-401F-A276-DC720E30E066";
   private final static String OPEN_SOCIAL_ID = "urn:collab:person:surfnet.nl:niels";
 

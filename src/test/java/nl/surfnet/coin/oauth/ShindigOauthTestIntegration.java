@@ -54,7 +54,7 @@ public class ShindigOauthTestIntegration {
     Provider provider = new ShindigProvider(true);
 
     provider.setRestEndpoint(BASE_URL + "rest/");
-    provider.setRpcEndpoint(BASE_URL + "rpc/");
+    provider.setRpcEndpoint(null);//BASE_URL + "rpc/");
     provider.setVersion("0.9");
 
     AuthScheme scheme = new OAuth2LeggedScheme(CONSUMER_KEY, CONSUMER_SECRET,
