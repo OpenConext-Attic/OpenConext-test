@@ -33,6 +33,7 @@ public class ShindigOauthTestIntegration {
 
   private static final int _EXPECTED_GROUP_COUNT = 7;
   private static final String BASE_URL = "https://gadgets.dev.coin.surf.net/social/";
+  //private static final String BASE_URL = "http://localhost:8080/social/";
   /*
    * Proteon key-secret
    */
