@@ -15,7 +15,7 @@
 		<opensocialclient.version>1.2-coin</opensocialclient.version>
 	</properties>
 	<scm>
-		<connection>https://svn.surfnet.nl/svn/coin-gui/coin-teams/trunk/coin-teams-war</connection>
+		<connection>https://svn.surfnet.nl/svn/coin-gui/coin-test/trunk</connection>
 	</scm>
 	<distributionManagement>
 		<repository>
