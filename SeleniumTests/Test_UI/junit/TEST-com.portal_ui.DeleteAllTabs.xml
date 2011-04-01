@@ -1,105 +1,133 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="dhcp-62.surfnet.nl" name="com.portal_ui.DeleteAllTabs" tests="1" time="64.871" timestamp="2011-01-28T12:27:52">
+<testsuite errors="1" failures="0" hostname="Nootbok" name="com.portal_ui.DeleteAllTabs" tests="1" time="23.704" timestamp="2011-04-01T08:56:09">
   <properties>
-    <property name="java.vendor" value="Apple Inc."></property>
+    <property name="java.vendor" value="Sun Microsystems Inc."></property>
+    <property name="env.MOZ_PLUGIN_PATH" value="/usr/lib/mozilla/plugins"></property>
+    <property name="env.LESS_TERMCAP_ue" value="[0m"></property>
     <property name="sun.java.launcher" value="SUN_STANDARD"></property>
-    <property name="eclipse.pdebuild.templates" value="/Applications/eclipse/plugins/org.eclipse.pde.build_3.6.0.v20100603/templates//"></property>
+    <property name="env.NXDIR" value="/opt/NX"></property>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler"></property>
-    <property name="os.name" value="Mac OS X"></property>
-    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar"></property>
-    <property name="env.TMPDIR" value="/var/folders/1P/1PjdQBD1HmKbqVI3QqJVB++++TI/-Tmp-/"></property>
+    <property name="env.PROMPT_COMMAND" value="printf &quot;\033]0;%s@%s:%s\007&quot; &quot;${USER}&quot; &quot;${HOSTNAME%%.*}&quot; &quot;${PWD/#$HOME/~}&quot; ; { [[ &quot;$AUTOJUMP_HOME&quot; == &quot;$HOME&quot; ]] &amp;&amp; (autojump -a &quot;$(pwd -P)&quot;&amp;)&gt;/dev/null 2&gt;&gt;${AUTOJUMP_DATA_DIR}/autojump_errors;} 2&gt;/dev/null; printf &quot;\033_%s@%s:%s\033\\&quot; &quot;${USER}&quot; &quot;${HOSTNAME%%.*}&quot; &quot;${PWD/#$HOME/~}&quot;"></property>
+    <property name="env.COLORFGBG" value="7;default"></property>
+    <property name="os.name" value="Linux"></property>
+    <property name="sun.boot.class.path" value="/opt/java/jre/lib/resources.jar:/opt/java/jre/lib/rt.jar:/opt/java/jre/lib/sunrsasign.jar:/opt/java/jre/lib/jsse.jar:/opt/java/jre/lib/jce.jar:/opt/java/jre/lib/charsets.jar:/opt/java/jre/lib/modules/jdk.boot.jar:/opt/java/jre/classes"></property>
+    <property name="env.PWD" value="/home/ivo/code/projects/SURFconext/SeleniumTests/Test_UI"></property>
+    <property name="env.XDG_SESSION_COOKIE" value="961405bb911a943a4fa9d4944bce41c6-1301646347.801534-1171270748"></property>
+    <property name="env.LANG" value="en_US.UTF-8"></property>
     <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."></property>
-    <property name="ant.home" value="/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145"></property>
-    <property name="java.runtime.version" value="1.6.0_22-b04-307-10M3261"></property>
-    <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-HtWElM/Render"></property>
-    <property name="env.DISPLAY" value="/tmp/launch-F1NQsE/org.x:0"></property>
-    <property name="user.name" value="femke"></property>
-    <property name="env.USER" value="femke"></property>
+    <property name="ant.home" value="/usr/share/java/apache-ant"></property>
+    <property name="java.runtime.version" value="1.6.0_24-b07"></property>
+    <property name="env.DISPLAY" value=":0.0"></property>
+    <property name="user.name" value="ivo"></property>
+    <property name="env.USER" value="ivo"></property>
     <property name="env.SHELL" value="/bin/bash"></property>
-    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0:0"></property>
-    <property name="awt.nativeDoubleBuffering" value="true"></property>
-    <property name="env.PATH" value="/usr/bin:/bin:/usr/sbin:/sbin"></property>
+    <property name="env.XDG_DATA_DIRS" value="/usr/share/:/usr/local/share/:/usr/share/:/usr/local/share/:/opt/kde/share:/opt/kde/share"></property>
+    <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat"></property>
+    <property name="env.PATH" value="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/share/java/apache-ant/bin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/opt/kde/bin:/opt/NX/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/qt/bin"></property>
     <property name="user.language" value="en"></property>
-    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"></property>
-    <property name="ant.file.Test_UI" value="/Users/femke/Documents/workspace/Test_UI/build.xml"></property>
-    <property name="env.APP_ICON_452" value="../Resources/Eclipse.icns"></property>
+    <property name="sun.boot.library.path" value="/opt/java/jre/lib/amd64"></property>
+    <property name="ant.file.Test_UI" value="/home/ivo/code/projects/SURFconext/SeleniumTests/Test_UI/build.xml"></property>
+    <property name="ant.project.default-target" value="sendmail"></property>
     <property name="ant.project.name" value="Test_UI"></property>
-    <property name="java.version" value="1.6.0_22"></property>
+    <property name="java.version" value="1.6.0_24"></property>
+    <property name="env.LESS_TERMCAP_so" value="[1;47;30m"></property>
     <property name="user.timezone" value=""></property>
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-Y9nW3ltUtu,guid=9ec17b716d4b4af3b44f727500000037"></property>
     <property name="sun.arch.data.model" value="64"></property>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"></property>
-    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"></property>
+    <property name="env.LESS_TERMCAP_me" value="[0m"></property>
+    <property name="env.SSH_AGENT_PID" value="1541"></property>
+    <property name="env.LESS_TERMCAP_md" value="[1;37m"></property>
+    <property name="java.endorsed.dirs" value="/opt/java/jre/lib/endorsed"></property>
+    <property name="env.LESS_TERMCAP_mb" value="[1;37m"></property>
+    <property name="env.DERBY_HOME" value="/opt/java/db"></property>
     <property name="sun.cpu.isalist" value=""></property>
-    <property name="sun.jnu.encoding" value="MacRoman"></property>
+    <property name="sun.jnu.encoding" value="UTF-8"></property>
     <property name="file.encoding.pkg" value="sun.io"></property>
+    <property name="env.SHLVL" value="3"></property>
+    <property name="env.LESS_TERMCAP_se" value="[0m"></property>
     <property name="file.separator" value="/"></property>
     <property name="java.specification.name" value="Java Platform API Specification"></property>
+    <property name="env.QTDIR" value="/opt/qt"></property>
     <property name="java.class.version" value="50.0"></property>
+    <property name="env.MPD_HOST" value="zombro.nl"></property>
     <property name="user.country" value="US"></property>
-    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"></property>
+    <property name="java.home" value="/opt/java/jre"></property>
+    <property name="env.TERMINFO" value="/usr/share/terminfo"></property>
     <property name="java.vm.info" value="mixed mode"></property>
-    <property name="env.LOGNAME" value="femke"></property>
-    <property name="ant.file" value="/Users/femke/Documents/workspace/Test_UI/build.xml"></property>
-    <property name="os.version" value="10.6.5"></property>
+    <property name="env.LOGNAME" value="ivo"></property>
+    <property name="env.PYTHONSTARTUP" value="/home/ivo/.pythonrc.py"></property>
+    <property name="ant.file" value="/home/ivo/code/projects/SURFconext/SeleniumTests/Test_UI/build.xml"></property>
+    <property name="os.version" value="2.6.37-ARCH"></property>
+    <property name="env.G_BROKEN_FILENAMES" value="1"></property>
     <property name="path.separator" value=":"></property>
-    <property name="java.vm.version" value="17.1-b03-307"></property>
-    <property name="ant.library.dir" value="/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib"></property>
+    <property name="java.vm.version" value="19.1-b02"></property>
+    <property name="ant.library.dir" value="/usr/share/java/apache-ant/lib"></property>
     <property name="junit.output.dir" value="junit"></property>
-    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob"></property>
+    <property name="env.JAVA_HOME" value="/opt/java"></property>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"></property>
+    <property name="env.TERM" value="screen"></property>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"></property>
-    <property name="awt.toolkit" value="apple.awt.CToolkit"></property>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"></property>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"></property>
-    <property name="eclipse.pdebuild.scripts" value="/Applications/eclipse/plugins/org.eclipse.pde.build_3.6.0.v20100603/scripts//"></property>
-    <property name="user.home" value="/Users/femke"></property>
+    <property name="env.QT_XFT" value="true"></property>
+    <property name="user.home" value="/home/ivo"></property>
     <property name="target" value="1.6"></property>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."></property>
-    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"></property>
-    <property name="java.vendor.url" value="http://www.apple.com/"></property>
-    <property name="env.JAVA_MAIN_CLASS_1400" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner"></property>
-    <property name="java.vm.vendor" value="Apple Inc."></property>
-    <property name="gopherProxySet" value="false"></property>
+    <property name="env.WINDOWID" value="18874806"></property>
+    <property name="java.vendor.url" value="http://java.sun.com/"></property>
+    <property name="java.library.path" value="/opt/java/jre/lib/amd64/server:/opt/java/jre/lib/amd64:/opt/java/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"></property>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."></property>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"></property>
-    <property name="java.class.path" value="/Users/femke/Documents/workspace/Test_UI/bin:/Users/femke/Documents/workspace/Test_UI/lib/selenium-server.jar:/Users/femke/Documents/workspace/Test_UI/lib/selenium-java-client-driver.jar:/Users/femke/Documents/workspace/Test_UI/lib/junit.jar:/Applications/eclipse/plugins/org.junit_3.8.2.v3_8_2_v20100427-1100/junit.jar:/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-launcher.jar:/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant.jar:/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-junit.jar"></property>
-    <property name="ant.version" value="Apache Ant version 1.7.1 compiled on June 27 2008"></property>
-    <property name="env.com.apple.java.jvmMode" value="client"></property>
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010"></property>
+    <property name="java.class.path" value="/home/ivo/code/projects/SURFconext/SeleniumTests/Test_UI/bin:/home/ivo/code/projects/SURFconext/SeleniumTests/Test_UI/lib/selenium-server.jar:/home/ivo/code/projects/SURFconext/SeleniumTests/Test_UI/lib/selenium-java-client-driver.jar:/home/ivo/code/projects/SURFconext/SeleniumTests/Test_UI/lib/junit.jar:/usr/share/java/apache-ant/lib/junit.jar:/usr/share/java/apache-ant/lib/ant-launcher.jar:/usr/share/java/apache-ant/lib/ant.jar:/usr/share/java/apache-ant/lib/ant-junit.jar:/usr/share/java/apache-ant/lib/ant-junit4.jar"></property>
+    <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt"></property>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"></property>
+    <property name="ant.file.type" value="file"></property>
+    <property name="env.AUTOJUMP_DATA_DIR" value="/home/ivo/.local/share/autojump"></property>
+    <property name="env.TMUX" value="/tmp//tmux-1000/default,1727,0"></property>
     <property name="java.vm.specification.version" value="1.0"></property>
-    <property name="sun.cpu.endian" value="little"></property>
     <property name="sun.os.patch.level" value="unknown"></property>
+    <property name="sun.cpu.endian" value="little"></property>
+    <property name="env.HOME" value="/home/ivo"></property>
     <property name="debuglevel" value="source,lines,vars"></property>
-    <property name="env.HOME" value="/Users/femke"></property>
-    <property name="env.ANT_HOME" value="/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145"></property>
-    <property name="eclipse.pdebuild.home" value="/Applications/eclipse/plugins/org.eclipse.pde.build_3.6.0.v20100603/.//"></property>
-    <property name="java.io.tmpdir" value="/var/folders/1P/1PjdQBD1HmKbqVI3QqJVB++++TI/-Tmp-/"></property>
-    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/"></property>
-    <property name="env.SSH_AUTH_SOCK" value="/tmp/launch-HeNWH5/Listeners"></property>
-    <property name="env.COMMAND_MODE" value="unix2003"></property>
-    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_452" value="1"></property>
-    <property name="mrj.build" value="10M3261"></property>
-    <property name="os.arch" value="x86_64"></property>
-    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"></property>
-    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext"></property>
-    <property name="user.dir" value="/Users/femke/Documents/workspace/Test_UI"></property>
-    <property name="mrj.version" value="1060.1.6.0_22-307"></property>
-    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_1400" value="1"></property>
+    <property name="env.ANT_HOME" value="/usr/share/java/apache-ant"></property>
+    <property name="env.LD_LIBRARY_PATH" value="/opt/java/jre/lib/amd64/server:/opt/java/jre/lib/amd64:/opt/java/jre/../lib/amd64"></property>
+    <property name="java.io.tmpdir" value="/tmp"></property>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"></property>
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/ssh-UeFWaOrF1540/agent.1540"></property>
+    <property name="env.XDG_CONFIG_HOME" value="/home/ivo/.config"></property>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"></property>
+    <property name="os.arch" value="amd64"></property>
+    <property name="java.ext.dirs" value="/opt/java/jre/lib/ext:/usr/java/packages/lib/ext"></property>
+    <property name="env.XAUTHORITY" value="/home/ivo/.Xauthority"></property>
+    <property name="user.dir" value="/home/ivo/code/projects/SURFconext/SeleniumTests/Test_UI"></property>
+    <property name="env.GTK_MODULES" value="canberra-gtk-module"></property>
+    <property name="env.J2SDKDIR" value="/opt/java"></property>
     <property name="line.separator" value="
 "></property>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"></property>
-    <property name="org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer0" value="/var/folders/1P/1PjdQBD1HmKbqVI3QqJVB++++TI/-Tmp-/null1355841780"></property>
-    <property name="basedir" value="/Users/femke/Documents/workspace/Test_UI"></property>
+    <property name="env.COLORTERM" value="rxvt-xpm"></property>
+    <property name="env.EDITOR" value="vim"></property>
+    <property name="basedir" value="/home/ivo/code/projects/SURFconext/SeleniumTests/Test_UI"></property>
     <property name="ant.java.version" value="1.6"></property>
-    <property name="ant.core.lib" value="/Applications/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant.jar"></property>
+    <property name="ant.core.lib" value="/usr/share/java/apache-ant/lib/ant.jar"></property>
+    <property name="env.XDG_CACHE_HOME" value="/home/ivo/.cache"></property>
     <property name="source" value="1.6"></property>
-    <property name="file.encoding" value="MacRoman"></property>
+    <property name="file.encoding" value="UTF-8"></property>
+    <property name="env.MAIL" value="/var/mail/ivo"></property>
+    <property name="env.PKG_CONFIG_PATH" value=":/opt/qt/lib/pkgconfig:/opt/qt/lib/pkgconfig"></property>
+    <property name="ant.file.type.Test_UI" value="file"></property>
+    <property name="env.LESS_TERMCAP_us" value="[0;36m"></property>
     <property name="java.specification.version" value="1.6"></property>
+    <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg:/etc/xdg"></property>
+    <property name="env.AUTOJUMP_HOME" value="/home/ivo"></property>
+    <property name="ant.project.invoked-targets" value="sendmail"></property>
+    <property name="env.XDG_DATA_HOME" value="/home/ivo/.local/share"></property>
   </properties>
-  <testcase classname="com.portal_ui.DeleteAllTabs" name="testDeleteAllTabs" time="64.673">
-    <error message="Timeout while waiting for element //div[8]/div[3]/div/button[1]" type="com.thoughtworks.selenium.Wait$WaitTimedOutException">com.thoughtworks.selenium.Wait$WaitTimedOutException: Timeout while waiting for element //div[8]/div[3]/div/button[1]
-	at com.thoughtworks.selenium.Wait.wait(Wait.java:81)
-	at com.thoughtworks.selenium.Wait.wait(Wait.java:48)
-	at com.portal_ui.BaseTest.waitForElement(BaseTest.java:28)
-	at com.portal_ui.DeleteAllTabs.testDeleteAllTabs(DeleteAllTabs.java:29)
+  <testcase classname="com.portal_ui.DeleteAllTabs" name="testDeleteAllTabs" time="23.456">
+    <error message="ERROR: Element username not found" type="com.thoughtworks.selenium.SeleniumException">com.thoughtworks.selenium.SeleniumException: ERROR: Element username not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:301)
+	at com.portal_ui.DeleteAllTabs.testDeleteAllTabs(DeleteAllTabs.java:16)
 	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
 </error>
   </testcase>

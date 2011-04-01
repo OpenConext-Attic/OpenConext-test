@@ -1,13 +1,13 @@
 <html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Unit Test Results: com.portal_ui.AddGadget</title>
+<title>Unit Test Results: com.portal_ui.SignIn</title>
 <link rel="stylesheet" type="text/css" title="Style" href="../../stylesheet.css">
 <script type="text/javascript" language="JavaScript">
         var TestCases = new Array();
         var cur;
         
-    cur = TestCases['com.portal_ui.AddGadget'] = new Array();
+    cur = TestCases['com.portal_ui.SignIn'] = new Array();
     
         cur['ant.core.lib'] = '/usr/share/java/apache-ant/lib/ant.jar';
     
@@ -284,13 +284,13 @@
 </tr>
 </table>
 <hr size="1">
-<h3>Class com.portal_ui.AddGadget</h3>
+<h3>Class com.portal_ui.SignIn</h3>
 <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
 <tr valign="top">
 <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
 </tr>
 <tr valign="top" class="Error">
-<td><a title="Display all tests" href="0_AddGadget.html">AddGadget</a></td><td><a title="Display all tests" href="0_AddGadget.html">1</a></td><td><a title="Display only errors" href="0_AddGadget-errors.html">1</a></td><td>0</td><td>117.950</td><td>2011-04-01T08:51:50</td><td>Nootbok</td>
+<td><a title="Display all tests" href="5_SignIn.html">SignIn</a></td><td><a title="Display all tests" href="5_SignIn.html">1</a></td><td><a title="Display only errors" href="5_SignIn-errors.html">1</a></td><td>0</td><td>22.758</td><td>2011-04-01T08:37:17</td><td>Nootbok</td>
 </tr>
 </table>
 <h2>Errors</h2>
@@ -299,14 +299,14 @@
 <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
 </tr>
 <tr valign="top" class="Error">
-<td><a name="testAddGadget"></a>testAddGadget</td><td>Error</td><td>Timeout while waiting for element //div[10]/div[3]/div/button[1]<br>
+<td><a name="testSignIn"></a>testSignIn</td><td>Error</td><td>ERROR: Element username not found<br>
 <br>
-<code>com.thoughtworks.selenium.Wait$WaitTimedOutException: Timeout while waiting for element //div[10]/div[3]/div/button[1]<br>	at com.thoughtworks.selenium.Wait.wait(Wait.java:81)<br>	at com.thoughtworks.selenium.Wait.wait(Wait.java:48)<br>	at com.portal_ui.BaseTest.waitForElement(BaseTest.java:28)<br>	at com.portal_ui.AddGadget.testAddGadget(AddGadget.java:66)<br>	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)<br>
-</code></td><td>117.709</td>
+<code>com.thoughtworks.selenium.SeleniumException: ERROR: Element username not found<br>	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)<br>	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)<br>	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:301)<br>	at com.portal_ui.SignIn.testSignIn(SignIn.java:17)<br>	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)<br>
+</code></td><td>22.515</td>
 </tr>
 </table>
 <div class="Properties">
-<a href="javascript:displayProperties('com.portal_ui.AddGadget');">
+<a href="javascript:displayProperties('com.portal_ui.SignIn');">
                     Properties &raquo;
                 </a>
 </div>

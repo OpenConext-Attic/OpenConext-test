@@ -65,8 +65,8 @@
 	<target name="sendmail" depends="Test_UI, junitreport">
 		<mail mailhost="smtp.gmail.com" mailport="465" messagemimetype="text/html" subject="Selenium Test portal" user="conexttest@gmail.com" ssl="on" password="surfconext">
 			<from address="conexttest@gmail.com" />
-			<to address="femo@surfnet.nl" />
-			<replyto address="femo@surfnet.nl" />
+			<to address="ivab@surfnet.nl" />
+			<replyto address="ivab@surfnet.nl" />
 			<message src="config/message.txt" />
 			<attachments>
 				<fileset dir="${junit.output.dir}">

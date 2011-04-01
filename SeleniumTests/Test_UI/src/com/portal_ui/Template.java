@@ -6,10 +6,10 @@ import java.io.File;
 public class Template extends BaseTest {
 
     public void testTemplate() throws Exception {
+        // Sign in with SURFguest test account
         selenium.click("//div[@id='TabContainer']/h1");
         selenium.click("ButtonShowAll");
-        // Sign in with SURFguest test account
-        selenium.click("//img[contains(@src,'https://www.surfguest.nl/img/surfnet_logo.gif')]");
+        selenium.click("//*[@class='SURFnetGuests']");
         selenium.click("LoginSubmit");
         selenium.waitForPageToLoad("90000");
         File f = new File("config" + File.separator + "config.txt");
