@@ -5,9 +5,10 @@ import java.io.File;
 public class DragDrop extends BaseTest {
 
     public void testDragDrop() throws Exception {
+        // Sign in with SURFguest test account
         selenium.click("//div[@id='TabContainer']/h1");
         selenium.click("ButtonShowAll");
-        selenium.click("//img[contains(@src,'https://www.surfguest.nl/img/surfnet_logo.gif')]");
+        selenium.click("//*[@class='SURFnetGuests']");
         selenium.click("LoginSubmit");
         selenium.waitForPageToLoad("90000");
         File f = new File("config" + File.separator + "config.txt");
@@ -15,6 +16,8 @@ public class DragDrop extends BaseTest {
         selenium.type("password", Utils.getConfigEntry(f, "password"));
         waitForElement("//input[@value='   Login   ']");
         selenium.click("//input[@value='   Login   ']");
+
+        // Test drag & drop
         waitForElement("AddTab");
         selenium.click("AddTab");
         selenium.type("InputTitle", "add gadget");

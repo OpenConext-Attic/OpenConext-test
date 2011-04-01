@@ -5,20 +5,21 @@ import java.io.File;
 public class SignIn extends BaseTest {
 
     public void testSignIn() throws Exception {
-        selenium.click("//div[@id='TabContainer']/h1");
-        selenium.click("ButtonShowAll");
         // Sign in with SURFguest test account
-        selenium.click("//img[contains(@src,'https://www.surfguest.nl/img/surfnet_logo.gif')]");
+        selenium.open("/coin/");
+        selenium.click("ButtonShowAll");
+        selenium.click("//*[@class='SURFnetGuests']");
         selenium.click("LoginSubmit");
         selenium.waitForPageToLoad("90000");
         File f = new File("config" + File.separator + "config.txt");
-        String username = Utils.getConfigEntry(f, "username");
-        selenium.type("username", username);
+        /* selenium.type("username", username); */
+        selenium.type("username", Utils.getConfigEntry(f, "username"));
         selenium.type("password", Utils.getConfigEntry(f, "password"));
         waitForElement("//input[@value='   Login   ']");
         selenium.click("//input[@value='   Login   ']");
 
         // check if user consent display is shown
+        String username = Utils.getConfigEntry(f, "username");
         if (selenium.isTextPresent("Net-ID")) {
             waitForElement("accept_terms_button");
             selenium.click("accept_terms_button");

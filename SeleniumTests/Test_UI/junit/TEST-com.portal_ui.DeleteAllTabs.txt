@@ -1,13 +1,13 @@
 Testsuite: com.portal_ui.DeleteAllTabs
-Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 64.871 sec
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 23.704 sec
 
-Testcase: testDeleteAllTabs took 64.668 sec
+Testcase: testDeleteAllTabs took 23.447 sec
 	Caused an ERROR
-Timeout while waiting for element //div[8]/div[3]/div/button[1]
-com.thoughtworks.selenium.Wait$WaitTimedOutException: Timeout while waiting for element //div[8]/div[3]/div/button[1]
-	at com.thoughtworks.selenium.Wait.wait(Wait.java:81)
-	at com.thoughtworks.selenium.Wait.wait(Wait.java:48)
-	at com.portal_ui.BaseTest.waitForElement(BaseTest.java:28)
-	at com.portal_ui.DeleteAllTabs.testDeleteAllTabs(DeleteAllTabs.java:29)
+ERROR: Element username not found
+com.thoughtworks.selenium.SeleniumException: ERROR: Element username not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:301)
+	at com.portal_ui.DeleteAllTabs.testDeleteAllTabs(DeleteAllTabs.java:16)
 	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
 

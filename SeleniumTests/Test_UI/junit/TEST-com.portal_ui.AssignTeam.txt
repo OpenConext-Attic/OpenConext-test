@@ -1,4 +1,13 @@
 Testsuite: com.portal_ui.AssignTeam
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 64.769 sec
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 25.906 sec
 
-Testcase: testAssignTeam took 64.568 sec
+Testcase: testAssignTeam took 25.636 sec
+	Caused an ERROR
+ERROR: Element username not found
+com.thoughtworks.selenium.SeleniumException: ERROR: Element username not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:301)
+	at com.portal_ui.AssignTeam.testAssignTeam(AssignTeam.java:15)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+
