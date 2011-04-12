@@ -1,9 +1,11 @@
 package nl.surfnet.coin.oauth;
 
+import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 import org.junit.Test;
 import org.opensocial.Client;
@@ -31,9 +33,12 @@ import org.opensocial.services.PeopleService;
  */
 public class ShindigOauthTestIntegration {
 
-  private static final int _EXPECTED_GROUP_COUNT = 7;
-  private static final String BASE_URL = "https://gadgets.dev.coin.surf.net/social/";
-  //private static final String BASE_URL = "http://localhost:8080/social/";
+  private static final int _EXPECTED_GROUP_COUNT = 5;
+  // private static final String BASE_URL =
+  // "https://gadgets.dev.coin.surf.net/social/";
+  // https://engine-internal.dev.surfconext.nl/social/people/urn%3Acollab%3Aperson%3Atest.surfguest.nl%3Asmibuildings?fields=all
+  private static final String BASE_URL = "https://os.dev.surfconext.nl/social/";
+  // private static final String BASE_URL = "http://localhost:8080/social/";
   /*
    * Proteon key-secret
    */
@@ -41,9 +46,11 @@ public class ShindigOauthTestIntegration {
   // "http://conext.proteon.nl/.SomeGadget";
   // private final static String CONSUMER_SECRET =
   // "4FA60498-9204-4D6A-929A-8DC70822F9CD";
-
-  private final static String CONSUMER_KEY = "http://coin.edia.nl.SomeGadget";
-  private final static String CONSUMER_SECRET = "5C2F6217-A1F1-42A2-BEFF-D6BEEEE0CA0C";
+  private static final String restTemplate = "people/{guid}/{selector}/{pid}";
+ // private final static String CONSUMER_KEY = "http://coin.edia.nl.SomeGadget";
+private final static String CONSUMER_KEY = "https://portal.dev.surfconext.nl/SomeGadget";
+    
+  private final static String CONSUMER_SECRET = "mysecret";
   private final static String OPEN_SOCIAL_ID = "urn:collab:person:surfnet.nl:hansz";
 
   @Test
@@ -55,7 +62,7 @@ public class ShindigOauthTestIntegration {
     Provider provider = new ShindigProvider(true);
 
     provider.setRestEndpoint(BASE_URL + "rest/");
-    provider.setRpcEndpoint(null);//BASE_URL + "rpc/");
+    provider.setRpcEndpoint(null);// BASE_URL + "rpc/");
     provider.setVersion("0.9");
 
     AuthScheme scheme = new OAuth2LeggedScheme(CONSUMER_KEY, CONSUMER_SECRET,
@@ -63,8 +70,12 @@ public class ShindigOauthTestIntegration {
 
     Client client = new Client(provider, scheme);
 
-    Request request = PeopleService.getFriends();
+    Request request = PeopleService.getUser(OPEN_SOCIAL_ID);
     Response response = client.send(request);
+    Person person = response.getEntry();
+
+    request = PeopleService.getFriends();
+    response = client.send(request);
 
     List<Person> friends = response.getEntries();
     assertEquals(1, friends.size());
@@ -88,7 +99,16 @@ public class ShindigOauthTestIntegration {
     request = ActivitiesService.createActivity(activity);
     response = client.send(request);
     List<Model> entries = response.getEntries();
-    assertEquals(1,entries.size());
+    // assertEquals(1,entries.size());
+
+    request = new Request(restTemplate, "people.get", "GET");
+    request.setModelClass(Person.class);
+    request.setGuid("urn:collab:person:surfnet.nl:hansz");
+    request.setSelector("test:3tu_identity_management");
+    List<Person> persons = client.send(request).getEntries();
+    assertTrue(persons.size() > 0);
+    person = persons.get(0);
+    assertTrue(person.getEmail().contains("@"));
   }
 
 }
