@@ -12,7 +12,7 @@
 		<spring.version>3.0.3.RELEASE</spring.version>
 		<jetty.version>6.1.22</jetty.version>
 		<httpclient.version>4.0.1</httpclient.version>
-		<opensocialclient.version>1.2-coin</opensocialclient.version>
+		<opensocialclient.version>1.6-coin</opensocialclient.version>
 	</properties>
 	<scm>
 		<connection>https://svn.surfnet.nl/svn/coin-gui/coin-test/trunk</connection>
