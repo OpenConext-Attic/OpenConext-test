@@ -12,8 +12,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.io.IOUtils;
+import org.mortbay.jetty.HttpMethods;
 import org.mortbay.jetty.Server;
 import org.mortbay.jetty.handler.AbstractHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.io.Resource;
 
 /**
@@ -26,6 +29,8 @@ import org.springframework.core.io.Resource;
  * 
  */
 public class MockHandler extends AbstractHandler {
+  private static final Logger logger = LoggerFactory
+      .getLogger(MockHandler.class);
 
   /*
    * The resource of the (XML, JSON etc) file that should be returned. It is
@@ -52,7 +57,11 @@ public class MockHandler extends AbstractHandler {
     ServletOutputStream outputStream = response.getOutputStream();
     String requestURI = request.getRequestURI();
     InputStream inputStream = getResponseInputStream(requestURI);
-
+    logger.debug("Received Http request ('" + requestURI + "')");
+    if (request.getMethod().equals(HttpMethods.POST)) {
+      logger.debug("Received POST request ('"
+          + IOUtils.toString(request.getInputStream()) + "')");
+    }
     IOUtils.copy(inputStream, outputStream);
     outputStream.flush();
   }
