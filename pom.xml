@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.surfnet.coin</groupId>
   <artifactId>coin-test</artifactId>
-  <version>1.3.0</version>
+  <version>1.3.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>coin-test</name>
   <description>coin-test</description>
@@ -15,7 +15,7 @@
     <opensocialclient.version>1.6-coin</opensocialclient.version>
   </properties>
   <scm>
-    <connection>scm:svn:https://svn.surfnet.nl/svn/coin-gui/coin-test/tags/coin-test-1.3.0</connection>
+    <connection>scm:svn:https://svn.surfnet.nl/svn/coin-gui/coin-test/trunk</connection>
   </scm>
   <distributionManagement>
     <repository>
