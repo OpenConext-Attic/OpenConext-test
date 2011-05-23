@@ -1,11 +1,23 @@
-/**
- * Copyright 2010
+/*
+ * Copyright 2011 SURFnet bv, The Netherlands
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
+
 package nl.surfnet.coin.mock;
 
 import org.mortbay.jetty.Server;
 import org.mortbay.jetty.bio.SocketConnector;
-import org.mortbay.jetty.handler.AbstractHandler;
 
 /**
  * Very simple {@link Server} to mock http traffic
@@ -17,6 +29,7 @@ public class MockHtppServer {
 
   /**
    * Construct MockHtppServer
+   * @param port number it listens to
    */
   public MockHtppServer(int port) {
     super();
@@ -38,6 +51,8 @@ public class MockHtppServer {
 
   /**
    * Create a handler for the server
+   * @param server {@link Server}
+   * @return the {@link MockHandler}
    */
   protected MockHandler createHandler(Server server) {
     return new MockHandler(server);
@@ -62,6 +77,7 @@ public class MockHtppServer {
   /**
    * Start the server in a non-blocking mode. The separate thread will be killed
    * when the test class finishes
+   * @param async if {@literal true} it will start with a short delay
    */
   public void doStartServer(boolean async) {
     Thread thread = new Thread(new Runnable() {
