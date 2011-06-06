@@ -52,7 +52,7 @@ public class ShindigOauthTestIntegration {
   // private static final String BASE_URL =
   // "https://gadgets.dev.coin.surf.net/social/";
   // https://engine-internal.dev.surfconext.nl/social/people/urn%3Acollab%3Aperson%3Atest.surfguest.nl%3Asmibuildings?fields=all
-  private static final String BASE_URL = "https://os.dev.surfconext.nl/social/";
+  private static final String BASE_URL = "https://os.test.surfconext.nl/social/";
   // private static final String BASE_URL = "http://localhost:8080/social/";
   /*
    * Proteon key-secret
@@ -63,10 +63,10 @@ public class ShindigOauthTestIntegration {
   // "4FA60498-9204-4D6A-929A-8DC70822F9CD";
   private static final String restTemplate = "people/{guid}/{selector}/{pid}";
  // private final static String CONSUMER_KEY = "http://coin.edia.nl.SomeGadget";
-private final static String CONSUMER_KEY = "https://portal.dev.surfconext.nl/SomeGadget";
+private final static String CONSUMER_KEY = "https://teams.test.surfconext.nl/teams/teams.xml";
     
   private final static String CONSUMER_SECRET = "mysecret";
-  private final static String OPEN_SOCIAL_ID = "urn:collab:person:surfnet.nl:hansz";
+  private final static String OPEN_SOCIAL_ID = "urn:collab:person:test.surfguest.nl:oharsta";
 
   @Test
   public void testOAuthClient() throws RequestException, IOException {
@@ -88,6 +88,7 @@ private final static String CONSUMER_KEY = "https://portal.dev.surfconext.nl/Som
     Request request = PeopleService.getUser(OPEN_SOCIAL_ID);
     Response response = client.send(request);
     Person person = response.getEntry();
+    boolean guest = person.isGuest();
 
     request = PeopleService.getFriends();
     response = client.send(request);
