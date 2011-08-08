@@ -16,40 +16,32 @@
 
 package com.portal_ui;
 
-import java.io.File;
-
 public class AddGadget extends BaseTest {
         
     public void testAddGadget() throws Exception {
-        // Login
-        /* selenium.click("//div[@id='TabContainer']/h1"); */
-        selenium.open("/coin/");
-        selenium.click("ButtonShowAll");
-        /* selenium.click("//img[contains(@src,'https://www.surfguest.nl/img/surfnet_logo.gif')]"); */
-        selenium.click("//*[@class='SURFnetGuests']");
-        selenium.click("LoginSubmit");
-        selenium.waitForPageToLoad("90000");
-        File f = new File("config" + File.separator + "config.txt");
-        selenium.type("username", Utils.getConfigEntry(f, "username"));
-        selenium.type("password", Utils.getConfigEntry(f, "password"));
-        waitForElement("//input[@value='   Login   ']");
-        selenium.click("//input[@value='   Login   ']");
-
         // Add tab
         waitForElement("AddTab");
         selenium.click("AddTab");
         selenium.type("InputTitle", "add gadget");
-        waitForElement("//div[10]/div[3]/div/button[1]");
-        selenium.click("//div[10]/div[3]/div/button[1]");
+        //waitForElement("//div[3]/div[3]/div/button[1]");
+        //selenium.click("//div[3]/div[3]/div/button[1]");
+        waitForElement("//span[text()='Add']");
+        selenium.click("//span[text()='Add']");
+        
+        // search SURFteams gadget
         waitForElement("link=Gadget");
         selenium.click("link=Gadget");
         waitForElement("GadgetQuery");
         selenium.type("GadgetQuery", "SURFteams");
         selenium.click("SubmitGadgetSearch");
+        // add SURFteams gadget
         verifyTrue(selenium.isTextPresent("SURFteams"));
         selenium.click("//*[@class='addGadgetBttn button-primary']");
-        waitForElement("//div[10]/div[3]/div/button[1]");
-        selenium.click("//div[10]/div[3]/div/button[1]");
+        // give consent
+        waitForElement("//div[6]/div[3]/div/button[1]");
+        selenium.click("//div[6]/div[3]/div/button[1]");
+        
+        // search SURFmedia gadgets
         waitForElement("link=Gadget");
         selenium.click("link=Gadget");
         waitForElement("GadgetQuery");
@@ -57,29 +49,47 @@ public class AddGadget extends BaseTest {
         selenium.click("SubmitGadgetSearch");
         verifyTrue(selenium.isTextPresent("SURFmedia player"));
         verifyTrue(selenium.isTextPresent("SURFmedia list"));
+        // add SURFmedia player gadget
         selenium.click("//*[@class='addGadgetBttn button-primary']");
-        waitForElement("//div[10]/div[3]/div/button[2]");
-        selenium.click("//div[10]/div[3]/div/button[2]");
+        waitForElement("//div[6]/div[3]/div/button[2]");
+        selenium.click("//div[6]/div[3]/div/button[2]");
         verifyTrue(selenium.isTextPresent("+ Add Gadget"));
+        // add SURFmedia gadget
         selenium.click("//*[@class='addGadgetBttn button-primary']");
-        waitForElement("//div[10]/div[3]/div/button[1]");
-        selenium.click("//div[10]/div[3]/div/button[1]");
+        waitForElement("//div[6]/div[3]/div/button[1]");
+        selenium.click("//div[6]/div[3]/div/button[1]");
+        
+        
+        // search SURFteams gadget
         waitForElement("link=Gadget");
         selenium.click("link=Gadget");
         waitForElement("GadgetQuery");
         selenium.type("GadgetQuery", "SURFteams");
         selenium.click("SubmitGadgetSearch");
+        // add SURFteams gadget
         selenium.click("//*[@class='addGadgetBttn button-primary']");
-        waitForElement("//div[10]/div[3]/div/button[2]");
-        selenium.click("//div[10]/div[3]/div/button[2]");
+        // cancel consent
+        waitForElement("//div[6]/div[3]/div/button[2]");
+        selenium.click("//div[6]/div[3]/div/button[2]");
+        
+        // search SURFteams gadget
         waitForElement("GadgetQuery");
         selenium.type("GadgetQuery", "SURFteams");
+        // add SURFteams gadget
         selenium.click("SubmitGadgetSearch");
         selenium.click("//*[@class='addGadgetBttn button-primary']");
-        waitForElement("//div[10]/div[3]/div/button[1]");
-        selenium.click("//div[10]/div[3]/div/button[1]");
-        selenium.click("link=x");
-        waitForElement("//div[10]/div[3]/div/button[1]");
-        selenium.click("//div[10]/div[3]/div/button[1]");
+        waitForElement("//div[6]/div[3]/div/button[1]");
+        selenium.click("//div[6]/div[3]/div/button[1]");
+        
+        //remove tab
+		waitForElement("//li[starts-with(@id, 'Tab_')]");
+		selenium.click("//li[starts-with(@id, 'Tab_')]");
+		waitForElement("link=x");
+		selenium.click("link=x");
+		waitForElement("//div[4]/div[3]/div/button[1]");
+		selenium.click("//div[4]/div[3]/div/button[1]");
+		
+		//cleanup
+		super.deleteAllTabs();
     }
 }

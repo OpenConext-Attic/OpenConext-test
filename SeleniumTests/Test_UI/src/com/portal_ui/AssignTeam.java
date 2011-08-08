@@ -16,28 +16,14 @@
 
 package com.portal_ui;
 
-import java.io.File;
-
 public class AssignTeam extends BaseTest {
         
     public void testAssignTeam() throws Exception {
-        // Sign in with SURFguest test account
-        selenium.open("/coin/");
-        selenium.click("ButtonShowAll");
-        selenium.click("//*[@class='SURFnetGuests']");
-        selenium.click("LoginSubmit");
-        selenium.waitForPageToLoad("90000");
-        File f = new File("config" + File.separator + "config.txt");
-        selenium.type("username", Utils.getConfigEntry(f, "username"));
-        selenium.type("password", Utils.getConfigEntry(f, "password"));
-        waitForElement("//input[@value='   Login   ']");
-        selenium.click("//input[@value='   Login   ']");
-
         waitForElement("AddTab");
         selenium.click("AddTab");
         selenium.type("InputTitle", "Assign2Team");
-        waitForElement("//div[10]/div[3]/div/button[1]");
-        selenium.click("//div[10]/div[3]/div/button[1]");
+        waitForElement("//div[3]/div[3]/div/button[1]");
+        selenium.click("//div[3]/div[3]/div/button[1]");
         waitForElement("link=Team");
         selenium.click("link=Team");
         waitForElement("teamSettingsShowAssign");
@@ -64,7 +50,10 @@ public class AssignTeam extends BaseTest {
         //selenium.click("//*[@title='Assign2Team']");
         waitForElement("link=x");
         selenium.click("link=x");
-        waitForElement("//div[10]/div[3]/div/button[1]");
-        selenium.click("//div[10]/div[3]/div/button[1]");
+        waitForElement("//div[4]/div[3]/div/button[1]");
+        selenium.click("//div[4]/div[3]/div/button[1]");
+        
+        //cleanup
+		super.deleteAllTabs();
     }
 }
