@@ -22,19 +22,6 @@ import java.io.File;
 public class Template extends BaseTest {
 
     public void testTemplate() throws Exception {
-        // Sign in with SURFguest test account
-        selenium.click("//div[@id='TabContainer']/h1");
-        selenium.click("ButtonShowAll");
-        selenium.click("//*[@class='SURFnetGuests']");
-        selenium.click("LoginSubmit");
-        selenium.waitForPageToLoad("90000");
-        File f = new File("config" + File.separator + "config.txt");
-        String username = Utils.getConfigEntry(f, "username");
-        selenium.type("username", username);
-        selenium.type("password", Utils.getConfigEntry(f, "password"));
-        waitForElement("//input[@value='   Login   ']");
-        selenium.click("//input[@value='   Login   ']");
-        waitForElement("AddTab");
         //[paste here your code from Selenium IDE without the sign in part]
         
     };

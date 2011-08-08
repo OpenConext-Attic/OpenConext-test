@@ -1,11 +1,14 @@
-url = https://gui.dev.coin.surf.net
-browser = firefox
-# chrome does work, but there are some issues with safari. You can also use firefox
-speed = 1000
+url = https://portal.acc.surfconext.nl
+path = Shibboleth.sso/Login?entityID%3DSURFnetGuests&target%3Dhttps://portal.acc.surfconext.nl/coin/home.shtml
+
 # when the speed is decreased some test will fail because of timing issues
-path = coin
+speed = 500
+
+# chrome does work, but there are some issues with safari. You can also use firefox
+browser = firefox
+
 # User name and password for SURFguest-test account
 # four logins are available username conexttest, conexttest1, conexttest2 and conexttest3
 # password is surfconext and email is conexttest@gmail.com (same password)
-username = conexttest
+username = conexttest2
 password = surfconext

@@ -19,29 +19,67 @@ package com.portal_ui;
 import java.io.File;
 
 import com.thoughtworks.selenium.*;
-import com.thoughtworks.selenium.Wait;
 
 public class BaseTest extends SeleneseTestCase {
-    @Override
-    public void setUp() throws Exception {
-        File f = new File("config" + File.separator + "config.txt");
-        String url = Utils.getConfigEntry(f, "url");
-        String browser = Utils.getConfigEntry(f, "browser");
-        String speed = Utils.getConfigEntry(f, "speed");
-        String path = Utils.getConfigEntry(f, "path");
-        setUp(url, "*" + browser);
-        selenium.setSpeed(speed);
-        selenium.windowMaximize();
-        selenium.open(url + "/" + path);
-    }
+	@Override
+	public void setUp() throws Exception {
+		File f = new File("config" + File.separator + "config.txt");
+		String url = Utils.getConfigEntry(f, "url");
+		String browser = Utils.getConfigEntry(f, "browser");
+		String speed = Utils.getConfigEntry(f, "speed");
+		String path = Utils.getConfigEntry(f, "path");
+		setUp(url, "*" + browser);
+		selenium.setSpeed(speed);
+		selenium.windowMaximize();
+		selenium.open(url + "/" + path);
+		signIn();
+	}
 
-    public void waitForElement(final String waitingElement) {
-        new Wait() {
-            @Override
-            public boolean until() {
-                return selenium.isElementPresent(waitingElement);
-            }
-        }.wait("Timeout while waiting for element " + waitingElement);
-    }
+	public void signIn() throws Exception {
+		// Open portal page
+		File f = new File("config" + File.separator + "config.txt");
+		selenium.open(Utils.getConfigEntry(f, "path"));
+		selenium.waitForPageToLoad("90000");
+		// Sign in with SURFguest test account
+		selenium.type("username", Utils.getConfigEntry(f, "username"));
+		selenium.type("password", Utils.getConfigEntry(f, "password"));
+		waitForElement("//input[@value='   Login   ']");
+		selenium.click("//input[@value='   Login   ']");
+
+		// skip POST data screen...
+		selenium.waitForPageToLoad("30000");
+		while (selenium.isTextPresent("Processing... please wait")) {
+			selenium.waitForPageToLoad("10000");
+		}
+
+		// Supply consent
+		if (selenium.getTitle().equalsIgnoreCase("SURFconext - Attribute Release")) {
+			waitForElement("accept_terms_button");
+			selenium.click("accept_terms_button");
+		}
+	}
+
+	public void deleteAllTabs() throws Exception {
+		waitForElement("AddTab");
+		while (selenium.isElementPresent("//li[starts-with(@id, 'Tab_')]")){
+			waitForElement("//li[starts-with(@id, 'Tab_')]");
+			selenium.click("//li[starts-with(@id, 'Tab_')]");
+			waitForElement("link=x");
+			selenium.click("link=x");
+			waitForElement("//div[4]/div[3]/div/button[1]");
+			selenium.click("//div[4]/div[3]/div/button[1]");
+		}
+		// TODO Delete 'other tabs'
+	};
+
+
+	public void waitForElement(final String waitingElement) {
+		new Wait() {
+			@Override
+			public boolean until() {
+				return selenium.isElementPresent(waitingElement);
+			}
+		}.wait("Timeout while waiting for element " + waitingElement);
+	}
 
 }

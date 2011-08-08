@@ -21,24 +21,14 @@ import java.io.File;
 public class TopMenu extends BaseTest {
 
     public void testTopMenu() throws Exception {
-        // Login
-        selenium.open("/coin/");
-        selenium.click("ButtonShowAll");
-        selenium.click("//*[@class='SURFnetGuests']");
-        selenium.click("LoginSubmit");
-        selenium.waitForPageToLoad("90000");
-        File f = new File("config" + File.separator + "config.txt");
-        selenium.type("username", Utils.getConfigEntry(f, "username"));
-        selenium.type("password", Utils.getConfigEntry(f, "password"));
-        waitForElement("//input[@value='   Login   ']");
-        selenium.click("//input[@value='   Login   ']");
 
+        File f = new File("config" + File.separator + "config.txt");
         waitForElement("AddTab");
         selenium.click("link=About");
         verifyTrue(selenium.isTextPresent("Version"));
         verifyTrue(selenium.isTextPresent("Copyright"));
         verifyTrue(selenium.isTextPresent("Terms of Service"));
-        selenium.click("//div[7]/div[3]/div/button");
+        selenium.click("//div[8]/div[3]/div/button");
         selenium.click("//li[@id='UserName']/strong");
         selenium.click("//li[@id='UserName']/strong");
         verifyTrue(selenium.isTextPresent("test.surfguest.nl"));
