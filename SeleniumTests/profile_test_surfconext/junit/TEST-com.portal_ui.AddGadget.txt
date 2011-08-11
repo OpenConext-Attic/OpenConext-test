@@ -1,0 +1,13 @@
+Testsuite: com.portal_ui.AddGadget
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 117.95 sec
+
+Testcase: testAddGadget took 117.699 sec
+	Caused an ERROR
+Timeout while waiting for element //div[10]/div[3]/div/button[1]
+com.thoughtworks.selenium.Wait$WaitTimedOutException: Timeout while waiting for element //div[10]/div[3]/div/button[1]
+	at com.thoughtworks.selenium.Wait.wait(Wait.java:81)
+	at com.thoughtworks.selenium.Wait.wait(Wait.java:48)
+	at com.portal_ui.BaseTest.waitForElement(BaseTest.java:28)
+	at com.portal_ui.AddGadget.testAddGadget(AddGadget.java:66)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+

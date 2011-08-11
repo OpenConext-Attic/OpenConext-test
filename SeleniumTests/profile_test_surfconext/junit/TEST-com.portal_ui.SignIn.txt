@@ -1,0 +1,4 @@
+Testsuite: com.portal_ui.SignIn
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 40.45 sec
+
+Testcase: testSignIn took 40.139 sec
