@@ -16,8 +16,6 @@
 
 package com.portal_ui;
 
-import java.io.File;
-
 //Replace Template and testTemplate with the name of this Test to NewName and testNewName (2 times in next two lines)
 public class Template extends BaseTest {
 
