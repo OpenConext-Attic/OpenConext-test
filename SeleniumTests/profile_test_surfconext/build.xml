@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright 2011 SURFnet bv, The Netherlands
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="sendmail" name="Test_UI">
+	<property environment="env" />
+	<property name="junit.output.dir" value="junit" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+	<path id="Test_UI.classpath">
+		<pathelement location="bin" />
+		<pathelement location="lib/selenium-server.jar" />
+		<pathelement location="lib/selenium-java-client-driver.jar" />
+		<pathelement location="lib/junit.jar" />
+	</path>
+	<target name="init">
+		<mkdir dir="bin" />
+		<copy includeemptydirs="false" todir="bin">
+			<fileset dir="src">
+				<exclude name="**/*.launch" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="clean">
+		<delete dir="bin" />
+	</target>
+	<target depends="clean" name="cleanall" />
+	<target depends="build-subprojects,build-project" name="build" />
+	<target name="build-subprojects" />
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
+			<src path="src" />
+			<classpath refid="Test_UI.classpath" />
+		</javac>
+	</target>
+	<target name="Test_UI" depends="build">
+		<mkdir dir="${junit.output.dir}" />
+		<junit fork="yes" printsummary="withOutAndErr" >
+			<formatter usefile="true" type="plain" />
+			<formatter type="xml" />
+			<test name="com.portal_ui.SignIn" todir="${junit.output.dir}" />
+			<test name="com.portal_ui.DragTab" todir="${junit.output.dir}" />
+			<test name="com.portal_ui.AddGadget" todir="${junit.output.dir}" />
+			<test name="com.portal_ui.Tabs" todir="${junit.output.dir}" />
+			<test name="com.portal_ui.TopMenu" todir="${junit.output.dir}" />
+			<test name="com.portal_ui.AssignTeam" todir="${junit.output.dir}" />
+			<!--Insert new test above this line. You can copy the last test and change the name of the test-->
+			<test name="com.portal_ui.DeleteAllTabs" todir="${junit.output.dir}" />
+						<classpath refid="Test_UI.classpath" />
+		</junit>
+	</target>
+	<target name="junitreport" depends="Test_UI">
+		<junitreport todir="${junit.output.dir}">
+			<fileset dir="${junit.output.dir}">
+				<include name="*.xml" />
+			</fileset>
+			<report format="frames" todir="${junit.output.dir}" />
+		</junitreport>
+	</target>
+	<target name="sendmail" depends="Test_UI, junitreport">
+		<mail mailhost="smtp.gmail.com" mailport="465" messagemimetype="text/html" subject="Selenium Test portal" user="conexttest@gmail.com" ssl="on" password="surfconext">
+			<from address="conexttest@gmail.com" />
+			<to address="ivab@surfnet.nl" />
+			<replyto address="ivab@surfnet.nl" />
+			<message src="config/message.txt" />
+			<attachments>
+				<fileset dir="${junit.output.dir}">
+					<include name="**/*.txt" />
+				</fileset>
+			</attachments>
+
+		</mail>
+	</target>
+</project>

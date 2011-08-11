@@ -1,0 +1,13 @@
+Testsuite: com.portal_ui.DeleteAllTabs
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 23.704 sec
+
+Testcase: testDeleteAllTabs took 23.447 sec
+	Caused an ERROR
+ERROR: Element username not found
+com.thoughtworks.selenium.SeleniumException: ERROR: Element username not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.type(DefaultSelenium.java:301)
+	at com.portal_ui.DeleteAllTabs.testDeleteAllTabs(DeleteAllTabs.java:16)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+
