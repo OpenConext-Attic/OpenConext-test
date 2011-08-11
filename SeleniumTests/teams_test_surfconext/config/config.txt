@@ -1,0 +1,14 @@
+urlprofile = https://profile.test.surfconext.nl
+urlportal = https://portal.test.surfconext.nl
+urlteams = https://teams.test.surfconext.nl
+browser = firefox
+# chrome does work, but there are some issues with safari. You can also use firefox
+speed = 1000
+# when the speed is decreased some test will fail because of timing issues
+path = coin
+# User name and password for SURFguest-test account
+# four logins are available username conexttest, conexttest1, conexttest2 and conexttest3
+# password is surfconext and email is conexttest@gmail.com (same password)
+username = conexttestmember
+username2 = conexttest
+password = surfconext
