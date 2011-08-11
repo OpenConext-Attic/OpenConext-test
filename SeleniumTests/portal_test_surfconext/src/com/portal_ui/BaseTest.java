@@ -21,7 +21,6 @@ import java.io.File;
 import com.thoughtworks.selenium.*;
 
 public class BaseTest extends SeleneseTestCase {
-	@Override
 	public void setUp() throws Exception {
 		File f = new File("config" + File.separator + "config.txt");
 		String url = Utils.getConfigEntry(f, "url");
@@ -75,7 +74,6 @@ public class BaseTest extends SeleneseTestCase {
 
 	public void waitForElement(final String waitingElement) {
 		new Wait() {
-			@Override
 			public boolean until() {
 				return selenium.isElementPresent(waitingElement);
 			}
