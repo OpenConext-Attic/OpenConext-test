@@ -58,36 +58,20 @@
         <antcall target="build"/>
     </target>
 
-    <target name="AddGadget">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="com.portal_ui.AddGadget" todir="${junit.output.dir}"/>
-            <classpath refid="portal_test_surfconext.classpath"/>
-        </junit>
-    </target>
     <target name="portal_test_surfconext">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-
-            <!--<test name="com.portal_ui.TestAddGadget" todir="${junit.output.dir}"/>-->
-
             <classpath refid="portal_test_surfconext.classpath"/>
-            <!--<classpath>-->
-            <!--    <pathelement location="${build.tests}"/>-->
-            <!--    <pathelement path="${java.class.path}"/>-->
-            <!--</classpath>-->
-
             <batchtest fork="yes" todir="${junit.output.dir}">
                 <fileset dir="${src.tests}">
                     <include name="**/*Test*.java"/>
                     <exclude name="**/BaseTest.java"/>
                 </fileset>
             </batchtest>
-
         </junit>
     </target>
+
     <target name="junitreport" depends= "portal_test_surfconext">
         <junitreport todir="${junit.output.dir}">
             <fileset dir="${junit.output.dir}">
