@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Nootbok" id="0" name="TestAddGadget" package="com.portal_ui" tests="1" time="46.325" timestamp="2011-08-15T13:25:06">
+  <testsuite errors="1" failures="0" hostname="Nootbok" id="0" name="TestAddGadget" package="com.portal_ui" tests="1" time="38.13" timestamp="2011-08-15T13:53:55">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -166,7 +166,7 @@
 
           <property name="java.class.path" value="/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/bin:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/junit.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-java-client-driver.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-server.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/activation.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/mail.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-server-standalone-2.0b3.jar:/usr/share/java/apache-ant/lib/junit.jar:/usr/share/java/apache-ant/lib/ant-launcher.jar:/usr/share/java/apache-ant/lib/ant.jar:/usr/share/java/apache-ant/lib/ant-junit.jar:/usr/share/java/apache-ant/lib/ant-junit4.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestAddGadget filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestAddGadget.xml crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher3198738519104614115.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit790776922779335532.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestAddGadget filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestAddGadget.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestAddGadget.txt crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher6642037227769501628.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit5168620560880819793.properties" />
 
           <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
 
@@ -250,14 +250,23 @@
 
       </properties>
 
-      <testcase classname="com.portal_ui.TestAddGadget" name="testAddGadget" time="46.035" />
+      <testcase classname="com.portal_ui.TestAddGadget" name="testAddGadget" time="37.844">
+          <error message="ERROR: Element SubmitGadgetSearch not found" type="com.thoughtworks.selenium.SeleniumException">com.thoughtworks.selenium.SeleniumException: ERROR: Element SubmitGadgetSearch not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at com.portal_ui.TestAddGadget.testAddGadget(TestAddGadget.java:79)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+</error>
+
+      </testcase>
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Nootbok" id="1" name="TestAssignTeam" package="com.portal_ui" tests="1" time="36.543" timestamp="2011-08-15T13:25:53">
+  <testsuite errors="1" failures="0" hostname="Nootbok" id="1" name="TestAssignTeam" package="com.portal_ui" tests="1" time="45.896" timestamp="2011-08-15T13:54:34">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -423,7 +432,7 @@
 
           <property name="java.class.path" value="/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/bin:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/junit.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-java-client-driver.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-server.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/activation.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/mail.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-server-standalone-2.0b3.jar:/usr/share/java/apache-ant/lib/junit.jar:/usr/share/java/apache-ant/lib/ant-launcher.jar:/usr/share/java/apache-ant/lib/ant.jar:/usr/share/java/apache-ant/lib/ant-junit.jar:/usr/share/java/apache-ant/lib/ant-junit4.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestAssignTeam filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestAssignTeam.xml crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher1468650485252614818.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit1427722571633001822.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestAssignTeam filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestAssignTeam.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestAssignTeam.txt crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher5412627953155604280.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit8394525500673224544.properties" />
 
           <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
 
@@ -507,14 +516,23 @@
 
       </properties>
 
-      <testcase classname="com.portal_ui.TestAssignTeam" name="testAssignTeam" time="36.215" />
+      <testcase classname="com.portal_ui.TestAssignTeam" name="testAssignTeam" time="45.61">
+          <error message="ERROR: Element //a[contains(text(),&apos;Assign2Team&apos;)] not found" type="com.thoughtworks.selenium.SeleniumException">com.thoughtworks.selenium.SeleniumException: ERROR: Element //a[contains(text(),&apos;Assign2Team&apos;)] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at com.portal_ui.TestAssignTeam.testAssignTeam(TestAssignTeam.java:49)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+</error>
+
+      </testcase>
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Nootbok" id="2" name="TestTabs" package="com.portal_ui" tests="1" time="31.264" timestamp="2011-08-15T13:26:30">
+  <testsuite errors="1" failures="0" hostname="Nootbok" id="2" name="TestTabs" package="com.portal_ui" tests="1" time="60.197" timestamp="2011-08-15T13:55:21">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -680,7 +698,7 @@
 
           <property name="java.class.path" value="/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/bin:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/junit.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-java-client-driver.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-server.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/activation.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/mail.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-server-standalone-2.0b3.jar:/usr/share/java/apache-ant/lib/junit.jar:/usr/share/java/apache-ant/lib/ant-launcher.jar:/usr/share/java/apache-ant/lib/ant.jar:/usr/share/java/apache-ant/lib/ant-junit.jar:/usr/share/java/apache-ant/lib/ant-junit4.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestTabs filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestTabs.xml crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher4321609680047974056.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit7231806326865647141.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestTabs filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestTabs.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestTabs.txt crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher2961388665011435964.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit2322239389441052037.properties" />
 
           <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
 
@@ -764,14 +782,24 @@
 
       </properties>
 
-      <testcase classname="com.portal_ui.TestTabs" name="testTabs" time="30.973" />
+      <testcase classname="com.portal_ui.TestTabs" name="testTabs" time="59.909">
+          <error message="Timeout while waiting for element //li[starts-with(@id, &apos;Tab_&apos;)]" type="com.thoughtworks.selenium.Wait$WaitTimedOutException">com.thoughtworks.selenium.Wait$WaitTimedOutException: Timeout while waiting for element //li[starts-with(@id, &apos;Tab_&apos;)]
+	at com.thoughtworks.selenium.Wait.wait(Wait.java:81)
+	at com.thoughtworks.selenium.Wait.wait(Wait.java:48)
+	at com.portal_ui.BaseTest.waitForElement(BaseTest.java:80)
+	at com.portal_ui.BaseTest.deleteAllTabs(BaseTest.java:64)
+	at com.portal_ui.TestTabs.testTabs(TestTabs.java:72)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+</error>
+
+      </testcase>
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Nootbok" id="3" name="TestUserInfo" package="com.portal_ui" tests="1" time="21.244" timestamp="2011-08-15T13:27:02">
+  <testsuite errors="0" failures="0" hostname="Nootbok" id="3" name="TestUserInfo" package="com.portal_ui" tests="1" time="30.536" timestamp="2011-08-15T13:56:22">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -937,7 +965,7 @@
 
           <property name="java.class.path" value="/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/bin:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/junit.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-java-client-driver.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-server.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/activation.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/mail.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-server-standalone-2.0b3.jar:/usr/share/java/apache-ant/lib/junit.jar:/usr/share/java/apache-ant/lib/ant-launcher.jar:/usr/share/java/apache-ant/lib/ant.jar:/usr/share/java/apache-ant/lib/ant-junit.jar:/usr/share/java/apache-ant/lib/ant-junit4.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestUserInfo filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestUserInfo.xml crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher8969082543489183667.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit6445803149798589608.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestUserInfo filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestUserInfo.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestUserInfo.txt crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher4554588856948037201.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit4230350031461014228.properties" />
 
           <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
 
@@ -1021,7 +1049,7 @@
 
       </properties>
 
-      <testcase classname="com.portal_ui.TestUserInfo" name="testSignIn" time="20.957" />
+      <testcase classname="com.portal_ui.TestUserInfo" name="testSignIn" time="30.11" />
 
       <system-out><![CDATA[]]></system-out>
 

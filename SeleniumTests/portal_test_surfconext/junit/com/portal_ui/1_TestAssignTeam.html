@@ -231,7 +231,7 @@
     
         cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
     
-        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestAssignTeam filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestAssignTeam.xml crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher1468650485252614818.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit1427722571633001822.properties';
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestAssignTeam filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestAssignTeam.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestAssignTeam.txt crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher5412627953155604280.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit8394525500673224544.properties';
     
         cur['sun.java.launcher'] = 'SUN_STANDARD';
     
@@ -297,8 +297,8 @@
 <tr valign="top">
 <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
 </tr>
-<tr valign="top" class="Pass">
-<td><a title="Display all tests" href="1_TestAssignTeam.html">TestAssignTeam</a></td><td><a title="Display all tests" href="1_TestAssignTeam.html">1</a></td><td>0</td><td>0</td><td>36.543</td><td>2011-08-15T13:25:53</td><td>Nootbok</td>
+<tr valign="top" class="Error">
+<td><a title="Display all tests" href="1_TestAssignTeam.html">TestAssignTeam</a></td><td><a title="Display all tests" href="1_TestAssignTeam.html">1</a></td><td><a title="Display only errors" href="1_TestAssignTeam-errors.html">1</a></td><td>0</td><td>45.896</td><td>2011-08-15T13:54:34</td><td>Nootbok</td>
 </tr>
 </table>
 <h2>Tests</h2>
@@ -306,8 +306,11 @@
 <tr valign="top">
 <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
 </tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testAssignTeam"></a>testAssignTeam</td><td>Success</td><td></td><td>36.215</td>
+<tr valign="top" class="Error">
+<td><a name="testAssignTeam"></a>testAssignTeam</td><td>Error</td><td>ERROR: Element //a[contains(text(),'Assign2Team')] not found<br>
+<br>
+<code>com.thoughtworks.selenium.SeleniumException: ERROR: Element //a[contains(text(),'Assign2Team')] not found<br>	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)<br>	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)<br>	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)<br>	at com.portal_ui.TestAssignTeam.testAssignTeam(TestAssignTeam.java:49)<br>	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)<br>
+</code></td><td>45.610</td>
 </tr>
 </table>
 <div class="Properties">

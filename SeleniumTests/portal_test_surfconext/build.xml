@@ -62,6 +62,7 @@
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
+            <formatter type="plain"/>
             <classpath refid="portal_test_surfconext.classpath"/>
             <batchtest fork="yes" todir="${junit.output.dir}">
                 <fileset dir="${src.tests}">
