@@ -59,14 +59,8 @@
 		<junit fork="yes" printsummary="withOutAndErr" >
 			<formatter usefile="true" type="plain" />
 			<formatter type="xml" />
-			<test name="com.portal_ui.SignIn" todir="${junit.output.dir}" />
-			<test name="com.portal_ui.DragTab" todir="${junit.output.dir}" />
-			<test name="com.portal_ui.AddGadget" todir="${junit.output.dir}" />
-			<test name="com.portal_ui.Tabs" todir="${junit.output.dir}" />
-			<test name="com.portal_ui.TopMenu" todir="${junit.output.dir}" />
-			<test name="com.portal_ui.AssignTeam" todir="${junit.output.dir}" />
-			<!--Insert new test above this line. You can copy the last test and change the name of the test-->
-			<test name="com.portal_ui.DeleteAllTabs" todir="${junit.output.dir}" />
+			<test name="com.portal_ui.Verifyprofile" todir="${junit.output.dir}" />
+			<test name="com.portal_ui.Delete_information" todir="${junit.output.dir}" />
 						<classpath refid="Test_UI.classpath" />
 		</junit>
 	</target>
@@ -79,7 +73,7 @@
 		</junitreport>
 	</target>
 	<target name="sendmail" depends="Test_UI, junitreport">
-		<mail mailhost="smtp.gmail.com" mailport="465" messagemimetype="text/html" subject="Selenium Test portal" user="conexttest@gmail.com" ssl="on" password="surfconext">
+		<mail enableStartTLS="true" mailhost="smtp.gmail.com" mailport="587" messagemimetype="text/html" subject="Selenium Test portal" user="conexttest@gmail.com" ssl="false" password="surfconext">
 			<from address="conexttest@gmail.com" />
 			<to address="ivab@surfnet.nl" />
 			<replyto address="ivab@surfnet.nl" />
