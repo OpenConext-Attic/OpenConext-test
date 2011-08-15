@@ -18,7 +18,7 @@ package com.portal_ui;
 
 import java.io.File;
 
-public class SignIn extends BaseTest {
+public class TestUserInfo extends BaseTest {
 
     public void testSignIn() throws Exception {
         

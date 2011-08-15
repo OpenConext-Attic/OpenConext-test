@@ -16,7 +16,7 @@
 
 package com.portal_ui;
 
-public class Tabs extends BaseTest {
+public class TestTabs extends BaseTest {
     public void testTabs() throws Exception {
         // Add one tab "First tab"
         waitForElement("AddTab");
