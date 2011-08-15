@@ -16,7 +16,7 @@
 
 package com.portal_ui;
 
-public class AddGadget extends BaseTest {
+public class TestAddGadget extends BaseTest {
         
     public void testAddGadget() throws Exception {
         // Add tab

@@ -16,7 +16,7 @@
 
 package com.portal_ui;
 
-public class AssignTeam extends BaseTest {
+public class TestAssignTeam extends BaseTest {
         
     public void testAssignTeam() throws Exception {
         waitForElement("AddTab");
