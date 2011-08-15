@@ -1,0 +1,9 @@
+Test_UI
+build
+build-project
+build-subprojects
+clean
+cleanall
+init
+junitreport
+sendmail
