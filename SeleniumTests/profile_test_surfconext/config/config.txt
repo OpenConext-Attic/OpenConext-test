@@ -1,6 +1,4 @@
 urlprofile = https://profile.test.surfconext.nl
-urlportal = https://portal.test.surfconext.nl
-urlteams = https://teams.test.surfconext.nl
 browser = firefox
 # chrome does work, but there are some issues with safari. You can also use firefox
 speed = 1000
