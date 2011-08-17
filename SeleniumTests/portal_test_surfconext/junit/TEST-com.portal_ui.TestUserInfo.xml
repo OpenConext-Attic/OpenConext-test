@@ -1,132 +1,121 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Nootbok" name="com.portal_ui.TestUserInfo" tests="1" time="30.536" timestamp="2011-08-15T13:56:22">
+<testsuite errors="0" failures="0" hostname="surfnet-PC" name="com.portal_ui.TestUserInfo" tests="1" time="17.682" timestamp="2011-08-15T14:22:56">
   <properties>
-    <property name="java.vendor" value="Oracle Corporation"></property>
-    <property name="env.MOZ_PLUGIN_PATH" value="/usr/lib/mozilla/plugins"></property>
-    <property name="env.LESSOPEN" value="|/usr/bin/lesspipe.sh %s"></property>
-    <property name="env.LESS_TERMCAP_ue" value="[0m"></property>
+    <property name="java.vendor" value="Sun Microsystems Inc."></property>
     <property name="sun.java.launcher" value="SUN_STANDARD"></property>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"></property>
-    <property name="env.PROMPT_COMMAND" value="printf &quot;\033]0;%s@%s:%s\007&quot; &quot;${USER}&quot; &quot;${HOSTNAME%%.*}&quot; &quot;${PWD/#$HOME/~}&quot; ; { [[ &quot;$AUTOJUMP_HOME&quot; == &quot;$HOME&quot; ]] &amp;&amp; (autojump -a &quot;$(pwd -P)&quot;&amp;)&gt;/dev/null 2&gt;&gt;${AUTOJUMP_DATA_DIR}/autojump_errors;} 2&gt;/dev/null"></property>
-    <property name="env.COLORFGBG" value="default;default"></property>
-    <property name="os.name" value="Linux"></property>
-    <property name="sun.boot.class.path" value="/opt/java/jre/lib/resources.jar:/opt/java/jre/lib/rt.jar:/opt/java/jre/lib/sunrsasign.jar:/opt/java/jre/lib/jsse.jar:/opt/java/jre/lib/jce.jar:/opt/java/jre/lib/charsets.jar:/opt/java/jre/classes"></property>
-    <property name="env.PWD" value="/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext"></property>
-    <property name="env.XDG_SESSION_COOKIE" value="961405bb911a943a4fa9d4944bce41c6-1313393691.94674-1963837528"></property>
-    <property name="env.LANG" value="en_US.UTF-8"></property>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"></property>
-    <property name="ant.home" value="/usr/share/java/apache-ant"></property>
-    <property name="java.runtime.version" value="1.7.0-b147"></property>
-    <property name="env.DISPLAY" value=":0.0"></property>
-    <property name="user.name" value="ivo"></property>
-    <property name="env.USER" value="ivo"></property>
-    <property name="env.HISTCONTROL" value="ignorespace"></property>
-    <property name="env.SHELL" value="/bin/bash"></property>
-    <property name="env.XDG_DATA_DIRS" value="/usr/share/:/usr/local/share/:/opt/kde/share"></property>
-    <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat"></property>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"></property>
+    <property name="env.PROMPT" value="$P$G"></property>
+    <property name="os.name" value="Windows 7"></property>
+    <property name="env.FP_NO_HOST_CHECK" value="NO"></property>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_26\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_26\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_26\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_26\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_26\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_26\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_26\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_26\jre\classes"></property>
+    <property name="env.COMPUTERNAME" value="SURFNET-PC"></property>
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData"></property>
+    <property name="sun.desktop" value="windows"></property>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="ant.home" value="C:\ant"></property>
+    <property name="java.runtime.version" value="1.6.0_26-b03"></property>
+    <property name="env.HOMEPATH" value="\Users\surfnet"></property>
+    <property name="user.name" value="surfnet"></property>
     <property name="ant.file.type.portal_test_surfconext" value="file"></property>
-    <property name="env.PATH" value="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/share/java/apache-ant/bin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/opt/kde/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/qt/bin"></property>
     <property name="user.language" value="en"></property>
-    <property name="sun.boot.library.path" value="/opt/java/jre/lib/amd64"></property>
+    <property name="env.windows_tracing_flags" value="3"></property>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_26\jre\bin"></property>
     <property name="ant.project.default-target" value="sendmail"></property>
     <property name="ant.project.name" value="portal_test_surfconext"></property>
-    <property name="java.version" value="1.7.0"></property>
-    <property name="env.LESS_TERMCAP_so" value="[1;47;30m"></property>
+    <property name="java.version" value="1.6.0_26"></property>
+    <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 23 Stepping 10, GenuineIntel"></property>
     <property name="user.timezone" value=""></property>
-    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-E1D3eo228B,guid=381919bc96962fe9a1580c3300000020"></property>
-    <property name="sun.arch.data.model" value="64"></property>
-    <property name="env.LESS_TERMCAP_me" value="[0m"></property>
-    <property name="env.SSH_AGENT_PID" value="1655"></property>
-    <property name="env.LESS_TERMCAP_md" value="[1;37m"></property>
-    <property name="java.endorsed.dirs" value="/opt/java/jre/lib/endorsed"></property>
-    <property name="env.LESS_TERMCAP_mb" value="[1;37m"></property>
-    <property name="env.DERBY_HOME" value="/opt/java/db"></property>
-    <property name="sun.cpu.isalist" value=""></property>
-    <property name="sun.jnu.encoding" value="UTF-8"></property>
+    <property name="env.CLIENTNAME" value="SURFNET-PC"></property>
+    <property name="env.TEMP" value="C:\Users\surfnet\AppData\Local\Temp"></property>
+    <property name="sun.arch.data.model" value="32"></property>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_26\jre\lib\endorsed"></property>
+    <property name="env._JAVACMD" value="C:\Program Files\Java\jdk1.6.0_26\bin\java.exe"></property>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"></property>
+    <property name="env.HOMEDRIVE" value="C:"></property>
+    <property name="sun.jnu.encoding" value="Cp1252"></property>
     <property name="file.encoding.pkg" value="sun.io"></property>
-    <property name="env.SHLVL" value="2"></property>
-    <property name="env.LESS_TERMCAP_se" value="[0m"></property>
-    <property name="file.separator" value="/"></property>
+    <property name="file.separator" value="\"></property>
     <property name="java.specification.name" value="Java Platform API Specification"></property>
     <property name="src.tests" value="src"></property>
-    <property name="env.QTDIR" value="/opt/qt"></property>
-    <property name="java.class.version" value="51.0"></property>
-    <property name="env.MPD_HOST" value="zombro.nl"></property>
+    <property name="java.class.version" value="50.0"></property>
     <property name="user.country" value="US"></property>
-    <property name="java.home" value="/opt/java/jre"></property>
-    <property name="env.TERMINFO" value="/usr/share/terminfo"></property>
-    <property name="java.vm.info" value="mixed mode"></property>
-    <property name="env.LOGNAME" value="ivo"></property>
-    <property name="env.PYTHONSTARTUP" value="/home/ivo/.pythonrc.py"></property>
-    <property name="ant.file" value="/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/build.xml"></property>
-    <property name="os.version" value="3.0-ARCH"></property>
-    <property name="env.G_BROKEN_FILENAMES" value="1"></property>
-    <property name="path.separator" value=":"></property>
-    <property name="java.vm.version" value="21.0-b17"></property>
-    <property name="ant.library.dir" value="/usr/share/java/apache-ant/lib"></property>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_26\jre"></property>
+    <property name="env.PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"></property>
+    <property name="env.APPDATA" value="C:\Users\surfnet\AppData\Roaming"></property>
+    <property name="env.PUBLIC" value="C:\Users\Public"></property>
+    <property name="env.windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log"></property>
+    <property name="java.vm.info" value="mixed mode, sharing"></property>
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe"></property>
+    <property name="env.OS" value="Windows_NT"></property>
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files"></property>
+    <property name="ant.file" value="C:\Selenium\Workspace\portal_test_surfconext\build.xml"></property>
+    <property name="os.version" value="6.1"></property>
+    <property name="env._USE_CLASSPATH" value="no"></property>
+    <property name="env.=::" value="::\"></property>
+    <property name="path.separator" value=";"></property>
+    <property name="java.vm.version" value="20.1-b02"></property>
+    <property name="env.USERPROFILE" value="C:\Users\surfnet"></property>
+    <property name="user.variant" value=""></property>
+    <property name="ant.library.dir" value="C:\ant\lib"></property>
     <property name="junit.output.dir" value="junit"></property>
-    <property name="env.JAVA_HOME" value="/opt/java"></property>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"></property>
-    <property name="env.TERM" value="rxvt-unicode-256color"></property>
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.6.0_26"></property>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"></property>
+    <property name="env.TMP" value="C:\Users\surfnet\AppData\Local\Temp"></property>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"></property>
-    <property name="env.QT_XFT" value="true"></property>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"></property>
-    <property name="user.home" value="/home/ivo"></property>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"></property>
+    <property name="user.home" value="C:\Users\surfnet"></property>
     <property name="target" value="1.6"></property>
-    <property name="java.specification.vendor" value="Oracle Corporation"></property>
-    <property name="env.HG" value="/usr/bin/hg"></property>
-    <property name="env.PAGER" value="less"></property>
-    <property name="env.WINDOWID" value="18874391"></property>
-    <property name="java.vendor.url" value="http://java.oracle.com/"></property>
-    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"></property>
-    <property name="java.vm.vendor" value="Oracle Corporation"></property>
+    <property name="env.ProgramData" value="C:\ProgramData"></property>
+    <property name="env.SESSIONNAME" value="RDP-Tcp#0"></property>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="env.NUMBER_OF_PROCESSORS" value="2"></property>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_26\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ant/bin;;."></property>
+    <property name="java.vendor.url" value="http://java.sun.com/"></property>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."></property>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"></property>
     <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010"></property>
-    <property name="java.class.path" value="/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/bin:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/junit.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-java-client-driver.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-server.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/activation.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/mail.jar:/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/lib/selenium-server-standalone-2.0b3.jar:/usr/share/java/apache-ant/lib/junit.jar:/usr/share/java/apache-ant/lib/ant-launcher.jar:/usr/share/java/apache-ant/lib/ant.jar:/usr/share/java/apache-ant/lib/ant-junit.jar:/usr/share/java/apache-ant/lib/ant-junit4.jar"></property>
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestUserInfo filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestUserInfo.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit/TEST-com.portal_ui.TestUserInfo.txt crashfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junitvmwatcher4554588856948037201.properties propsfile=/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/junit4230350031461014228.properties"></property>
-    <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt"></property>
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.TestUserInfo filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Selenium\Workspace\portal_test_surfconext\junit\TEST-com.portal_ui.TestUserInfo.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\Selenium\Workspace\portal_test_surfconext\junit\TEST-com.portal_ui.TestUserInfo.txt crashfile=C:\Selenium\Workspace\portal_test_surfconext\junitvmwatcher3630243813723114954.properties propsfile=C:\Selenium\Workspace\portal_test_surfconext\junit4366908805847542059.properties"></property>
+    <property name="java.class.path" value="C:\Selenium\Workspace\portal_test_surfconext\bin;C:\Selenium\Workspace\portal_test_surfconext\lib\junit.jar;C:\Selenium\Workspace\portal_test_surfconext\lib\selenium-java-client-driver.jar;C:\Selenium\Workspace\portal_test_surfconext\lib\selenium-server.jar;C:\Selenium\Workspace\portal_test_surfconext\lib\activation.jar;C:\Selenium\Workspace\portal_test_surfconext\lib\mail.jar;C:\Selenium\Workspace\portal_test_surfconext\lib\selenium-server-standalone-2.0b3.jar;C:\ant\lib\junit-4.8.1.jar;C:\ant\lib\ant-launcher.jar;C:\ant\lib\ant.jar;C:\ant\lib\ant-junit.jar;C:\ant\lib\ant-junit4.jar"></property>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"></property>
     <property name="ant.file.type" value="file"></property>
-    <property name="env.AUTOJUMP_DATA_DIR" value="/home/ivo/.local/share/autojump"></property>
-    <property name="java.vm.specification.version" value="1.7"></property>
-    <property name="sun.os.patch.level" value="unknown"></property>
+    <property name="env.windir" value="C:\Windows"></property>
+    <property name="env.LOGONSERVER" value="\\SURFNET-PC"></property>
+    <property name="java.vm.specification.version" value="1.0"></property>
+    <property name="env.PROCESSOR_ARCHITECTURE" value="x86"></property>
     <property name="sun.cpu.endian" value="little"></property>
+    <property name="sun.os.patch.level" value="Service Pack 1"></property>
     <property name="debuglevel" value="source,lines,vars"></property>
-    <property name="env.HOME" value="/home/ivo"></property>
-    <property name="env.ANT_HOME" value="/usr/share/java/apache-ant"></property>
-    <property name="java.io.tmpdir" value="/tmp"></property>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"></property>
-    <property name="env.SSH_AUTH_SOCK" value="/tmp/ssh-mfkGtxye1654/agent.1654"></property>
-    <property name="env.XDG_CONFIG_HOME" value="/home/ivo/.config"></property>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"></property>
-    <property name="os.arch" value="amd64"></property>
-    <property name="java.ext.dirs" value="/opt/java/jre/lib/ext:/usr/java/packages/lib/ext"></property>
-    <property name="env.XAUTHORITY" value="/home/ivo/.Xauthority"></property>
-    <property name="user.dir" value="/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext"></property>
-    <property name="env.GTK_MODULES" value="canberra-gtk-module"></property>
-    <property name="env.J2SDKDIR" value="/opt/java"></property>
+    <property name="env.ANT_HOME" value="C:\ant"></property>
+    <property name="env.ProgramFiles" value="C:\Program Files"></property>
+    <property name="java.io.tmpdir" value="C:\Users\surfnet\AppData\Local\Temp\"></property>
+    <property name="env.PROCESSOR_REVISION" value="170a"></property>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"></property>
+    <property name="env.SystemRoot" value="C:\Windows"></property>
+    <property name="os.arch" value="x86"></property>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"></property>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_26\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"></property>
+    <property name="user.dir" value="C:\Selenium\Workspace\portal_test_surfconext"></property>
+    <property name="env.LOCALAPPDATA" value="C:\Users\surfnet\AppData\Local"></property>
     <property name="line.separator" value="
 "></property>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"></property>
-    <property name="env.COLORTERM" value="rxvt-xpm"></property>
-    <property name="env.EDITOR" value="vim"></property>
-    <property name="basedir" value="/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext"></property>
-    <property name="ant.java.version" value="1.7"></property>
-    <property name="ant.core.lib" value="/usr/share/java/apache-ant/lib/ant.jar"></property>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"></property>
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"></property>
+    <property name="env.Path" value="C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ant/bin;"></property>
+    <property name="basedir" value="C:\Selenium\Workspace\portal_test_surfconext"></property>
+    <property name="ant.java.version" value="1.6"></property>
+    <property name="ant.core.lib" value="C:\ant\lib\ant.jar"></property>
+    <property name="env.USERNAME" value="surfnet"></property>
     <property name="source" value="1.6"></property>
-    <property name="env.XDG_CACHE_HOME" value="/home/ivo/.cache"></property>
-    <property name="file.encoding" value="UTF-8"></property>
-    <property name="env.MAIL" value="/var/mail/ivo"></property>
-    <property name="env.PKG_CONFIG_PATH" value=":/opt/qt/lib/pkgconfig"></property>
-    <property name="ant.file.portal_test_surfconext" value="/home/ivo/code/java/workspaces/SURFspace/portal_test_surfconext/build.xml"></property>
-    <property name="env.LESS_TERMCAP_us" value="[0;36m"></property>
-    <property name="java.specification.version" value="1.7"></property>
+    <property name="env.SystemDrive" value="C:"></property>
+    <property name="file.encoding" value="Cp1252"></property>
+    <property name="env.USERDOMAIN" value="surfnet-PC"></property>
+    <property name="ant.file.portal_test_surfconext" value="C:\Selenium\Workspace\portal_test_surfconext\build.xml"></property>
+    <property name="java.specification.version" value="1.6"></property>
+    <property name="env.=C:" value="C:\Selenium\Workspace\portal_test_surfconext"></property>
     <property name="ant.project.invoked-targets" value="sendmail"></property>
-    <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg"></property>
-    <property name="env.AUTOJUMP_HOME" value="/home/ivo"></property>
-    <property name="env.XDG_DATA_HOME" value="/home/ivo/.local/share"></property>
+    <property name="env.PROCESSOR_LEVEL" value="6"></property>
   </properties>
-  <testcase classname="com.portal_ui.TestUserInfo" name="testSignIn" time="30.11"></testcase>
+  <testcase classname="com.portal_ui.TestUserInfo" name="testSignIn" time="17.529"></testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
