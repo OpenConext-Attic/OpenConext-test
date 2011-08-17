@@ -1,0 +1,4 @@
+Testsuite: com.portal_ui.TestTabs
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 27.387 sec
+
+Testcase: testTabs took 27.231 sec
