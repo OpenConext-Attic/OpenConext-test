@@ -38,37 +38,15 @@ public class Login_No_AddTeamGuest extends BaseTest {
 					selenium.click("id=accept_terms_button");
 			}			
 			catch (Exception e) {
+				Screenshot();
+				throw new Error(e);
 			}
 			if ("SURFteams".equals(selenium.getText("SURFteams")))
 				fail("Guest kan team maken.");
 				
-//			verifyFalse(selenium.isTextPresent("SURFteams"));
 			
 			Thread.sleep(1000);
 		}
-//		verifyTrue(selenium.isTextPresent("SURFconext - My Profile ")); 
-//		verifyTrue(selenium.isTextPresent("Logout")); 
-//		verifyEquals("I Accept", selenium.getValue("id=accept_terms_button"));
 	}
 	
 }
-/*
- * // check if user consent display is shown String username =
- * Utils.getConfigEntry(f, "username"); if (selenium.isTextPresent("Net-ID")) {
- * waitForElement("accept_terms_button"); selenium.click("accept_terms_button");
- * waitForElement("AddTab"); verifyTrue(selenium.isTextPresent("Other tabs"));
- * selenium.click("//li[@id='UserName']/strong");
- * verifyTrue(selenium.isTextPresent
- * ("exact:urn:collab:person:test.surfguest.nl:" + username));
- * selenium.click("PageContainer"); selenium.click("link=Sign out");
- * selenium.waitForPageToLoad("30000");
- * verifyTrue(selenium.isTextPresent("Local Logout")); } else {
- * waitForElement("AddTab"); verifyTrue(selenium.isTextPresent("Other tabs"));
- * selenium.click("//li[@id='UserName']/strong"); // check if the username is
- * right (same as sign in)
- * verifyTrue(selenium.isTextPresent("exact:urn:collab:person:test.surfguest.nl:"
- * + username)); selenium.click("PageContainer");
- * selenium.click("link=Sign out"); selenium.waitForPageToLoad("30000"); //
- * check if logout message is shown
- * verifyTrue(selenium.isTextPresent("Local Logout")); } }; }
- */

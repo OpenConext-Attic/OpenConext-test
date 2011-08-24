@@ -19,7 +19,8 @@ package com.portal_ui;
 public class ModifyDescription extends Login {
 
     public void testSignIn() throws Exception {
-		login();
+		try {
+    	login();
     	verifyTrue(selenium.isTextPresent("Logout"));
 		selenium.click("link=teamteamteam");
 		selenium.waitForPageToLoad("30000");
@@ -32,4 +33,9 @@ public class ModifyDescription extends Login {
 		selenium.click("link=< Back to teams");
 		selenium.waitForPageToLoad("30000");
     }
+    catch (Error e) {
+    	Screenshot();
+		throw new Error(e);
+		}
+	} 
 }

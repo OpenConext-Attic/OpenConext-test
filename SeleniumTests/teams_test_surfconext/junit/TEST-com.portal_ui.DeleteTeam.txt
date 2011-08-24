@@ -1,0 +1,4 @@
+Testsuite: com.portal_ui.DeleteTeam
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 21.986 sec
+
+Testcase: testSignIn took 21.861 sec
