@@ -21,6 +21,9 @@
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. -->
 <project basedir="." default="sendmail" name="Test_UI">
+	<tstamp>
+		<format property="TODAY_UK" pattern="d-M-yyyy"/>
+	</tstamp>
 	<property environment="env" />
 	<property name="junit.output.dir" value="junit" />
 	<property name="debuglevel" value="source,lines,vars" />
@@ -77,17 +80,19 @@
 		</junitreport>
 	</target>
 	<target name="sendmail" depends="Test_UI, junitreport">
-		<mail enableStartTLS="true" mailhost="smtp.gmail.com" mailport="587" messagemimetype="text/html" subject="Selenium Test portal" user="conexttest@gmail.com" ssl="false" password="surfconext">
+		<mail enableStartTLS="true" mailhost="smtp.gmail.com" mailport="587" messagemimetype="text/html" subject="Selenium Test portal ${TODAY_UK}" user="conexttest@gmail.com" ssl="false" password="surfconext">
 			<from address="conexttest@gmail.com" />
-			<to address="ivab@surfnet.nl" />
+			<to address="jeev@surfnet.nl" />
 			<replyto address="ivab@surfnet.nl" />
 			<message src="config/message.txt" />
 			<attachments>
 				<fileset dir="${junit.output.dir}">
 					<include name="**/*.txt" />
 				</fileset>
+				<fileset dir="C:\Selenium\Workspace\teams_test_surfconext\report\Screens">
+					<include name="**/*${TODAY_UK}.PNG" />
+				</fileset>
 			</attachments>
-
 		</mail>
 	</target>
 </project>

@@ -1,0 +1,4 @@
+Testsuite: com.portal_ui.AddMemberCSV
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 24.564 sec
+
+Testcase: testSignIn took 24.424 sec

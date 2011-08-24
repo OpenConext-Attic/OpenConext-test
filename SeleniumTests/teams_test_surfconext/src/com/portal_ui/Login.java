@@ -16,7 +16,6 @@
 
 package com.portal_ui;
 
-
 public class Login extends BaseTest {
 
 	public void login() throws Exception {
@@ -38,8 +37,10 @@ public class Login extends BaseTest {
 					selenium.click("id=accept_terms_button");
 			}
 			catch (Exception e) {
-			}
-			Thread.sleep(1000);
+				Screenshot();
+				throw new Error(e);
+				
+				}
 		}
 //		verifyTrue(selenium.isTextPresent("SURFconext - My Profile ")); 
 //		verifyTrue(selenium.isTextPresent("Logout")); 

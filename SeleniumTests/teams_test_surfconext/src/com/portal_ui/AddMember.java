@@ -18,18 +18,24 @@ package com.portal_ui;
 
 public class AddMember extends Login {
 
-    public void testSignIn() throws Exception {
-		login();
-    	verifyTrue(selenium.isTextPresent("Logout"));
-//		selenium.waitForPageToLoad("30000");
-		selenium.click("link=teamteamteam");
-		selenium.waitForPageToLoad("30000");
-		selenium.click("link=Add Member");
-		selenium.waitForPageToLoad("30000");
-		selenium.type("id=MemberEmail", "conexttest@gmail.com");
-		selenium.click("name=addMember");
-		selenium.waitForPageToLoad("30000");
-		selenium.click("link=< Back to teams");
-		selenium.waitForPageToLoad("30000");
-    }
+	public void testSignIn() throws Exception {
+		try {
+			login();
+			verifyTrue(selenium.isTextPresent("Logout"));
+			// selenium.waitForPageToLoad("30000");
+			selenium.click("link=teamteamteam");
+			selenium.waitForPageToLoad("30000");
+			selenium.click("link=Add Member");
+			selenium.waitForPageToLoad("30000");
+			selenium.type("id=MemberEmail", "conexttest@gmail.com");
+			selenium.click("name=addMember");
+			selenium.waitForPageToLoad("30000");
+			selenium.click("link=< Back to teams");
+			selenium.waitForPageToLoad("30000");
+		}
+		catch (Exception e) {
+			Screenshot();
+		throw new Error(e);
+		}
+	}
 }

@@ -1,0 +1,15 @@
+Testsuite: com.portal_ui.AddTeam
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 28.205 sec
+
+Testcase: testSignIn took 28.064 sec
+	Caused an ERROR
+com.thoughtworks.selenium.SeleniumException: ERROR: Element link=< Back to teams not found
+java.lang.Error: com.thoughtworks.selenium.SeleniumException: ERROR: Element link=< Back to teams not found
+	at com.portal_ui.AddTeam.testSignIn(AddTeam.java:40)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+Caused by: com.thoughtworks.selenium.SeleniumException: ERROR: Element link=< Back to teams not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:177)
+	at com.portal_ui.AddTeam.testSignIn(AddTeam.java:36)
+

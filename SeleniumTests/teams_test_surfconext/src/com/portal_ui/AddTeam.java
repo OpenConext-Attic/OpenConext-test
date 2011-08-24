@@ -16,20 +16,28 @@
 
 package com.portal_ui;
 
+//import java.util.UUID;
+
 public class AddTeam extends Login {
 
-    public void testSignIn() throws Exception {
-		login();
-    	verifyTrue(selenium.isTextPresent("Logout"));
-		selenium.open("/teams/");
-		selenium.click("link=Add Team");
-		selenium.waitForPageToLoad("30000");
-		selenium.type("id=TeamName", "teamteamteam");
-		selenium.type("id=TeamDescription", "team");
-		selenium.click("id=TeamConsent");
-		selenium.click("id=TeamViewability");
-		selenium.click("name=createTeam");
-		selenium.waitForPageToLoad("30000");
-		selenium.click("link=< Back to teams");
-    }
+	public void testSignIn() throws Exception {
+		try {
+			login();
+			verifyTrue(selenium.isTextPresent("Logout"));
+			selenium.open("/teams/");
+			selenium.click("link=Add Team");
+			selenium.waitForPageToLoad("30000");
+			selenium.type("id=TeamName", "teamteamteam");
+			selenium.type("id=TeamDescription", "team");
+			selenium.click("id=TeamConsent");
+			selenium.click("id=TeamViewability");
+			selenium.click("name=createTeam");
+			selenium.waitForPageToLoad("30000");
+			selenium.click("link=< Back to teams");
+		}
+		catch (Exception e) {
+			Screenshot();
+		throw new Error(e);
+		}
+	}
 }

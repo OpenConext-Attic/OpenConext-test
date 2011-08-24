@@ -19,7 +19,8 @@ package com.portal_ui;
 public class DeleteTeam extends Login {
 
     public void testSignIn() throws Exception {
-		login();
+		try {
+    	login();
     	verifyTrue(selenium.isTextPresent("Logout"));
 		selenium.open("/teams/home.shtml?teams=my&view=app");
 		selenium.click("link=teamteamteam");
@@ -27,5 +28,10 @@ public class DeleteTeam extends Login {
 		selenium.click("id=DeleteTeam");
 		selenium.click("//div[3]/div[3]/div/button");
 		selenium.waitForPageToLoad("30000");
+		}
+		catch (Exception e) {
+			Screenshot();
+			throw new Error(e);
+		}
     }
 }

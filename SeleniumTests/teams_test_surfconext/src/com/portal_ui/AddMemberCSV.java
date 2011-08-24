@@ -19,7 +19,8 @@ package com.portal_ui;
 public class AddMemberCSV extends Login {
 
     public void testSignIn() throws Exception {
-		login();
+		try {
+    	login();
     	verifyTrue(selenium.isTextPresent("Logout"));
 //		selenium.waitForPageToLoad("30000");
 		selenium.click("link=teamteamteam");
@@ -32,4 +33,9 @@ public class AddMemberCSV extends Login {
 		selenium.click("link=< Back to teams");
 		selenium.waitForPageToLoad("30000");
     }
+    catch (Error e) {
+    	Screenshot();
+		throw new Error(e);
+		}
+	} 
 }
