@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="surfnet-PC" id="0" name="Delete_information" package="com.portal_ui" tests="1" time="16.533" timestamp="2011-08-15T14:36:16">
+  <testsuite errors="0" failures="0" hostname="surfnet-PC" id="0" name="Delete_information" package="com.portal_ui" tests="1" time="16.63" timestamp="2011-08-22T08:19:24">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -146,7 +146,7 @@
 
           <property name="java.class.path" value="C:\Selenium\Workspace\profile_test_surfconext\bin;C:\Selenium\Workspace\profile_test_surfconext\lib\selenium-server.jar;C:\Selenium\Workspace\profile_test_surfconext\lib\selenium-java-client-driver.jar;C:\Selenium\Workspace\profile_test_surfconext\lib\junit.jar;C:\ant\lib\junit-4.8.1.jar;C:\ant\lib\ant-launcher.jar;C:\ant\lib\ant.jar;C:\ant\lib\ant-junit.jar;C:\ant\lib\ant-junit4.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.Delete_information filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Delete_information.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Delete_information.xml crashfile=C:\Selenium\Workspace\profile_test_surfconext\junitvmwatcher4746155580625941583.properties propsfile=C:\Selenium\Workspace\profile_test_surfconext\junit8083101463569006512.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.Delete_information filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Delete_information.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Delete_information.xml crashfile=C:\Selenium\Workspace\profile_test_surfconext\junitvmwatcher4718163835848449620.properties propsfile=C:\Selenium\Workspace\profile_test_surfconext\junit2332756328297377032.properties" />
 
           <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
 
@@ -226,14 +226,14 @@
 
       </properties>
 
-      <testcase classname="com.portal_ui.Delete_information" name="testDelete" time="16.392" />
+      <testcase classname="com.portal_ui.Delete_information" name="testDelete" time="16.489" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="surfnet-PC" id="1" name="Verifyprofile" package="com.portal_ui" tests="1" time="23.737" timestamp="2011-08-15T14:35:52">
+  <testsuite errors="0" failures="0" hostname="surfnet-PC" id="1" name="Verifyprofile" package="com.portal_ui" tests="1" time="23.549" timestamp="2011-08-22T08:19:00">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -379,7 +379,7 @@
 
           <property name="java.class.path" value="C:\Selenium\Workspace\profile_test_surfconext\bin;C:\Selenium\Workspace\profile_test_surfconext\lib\selenium-server.jar;C:\Selenium\Workspace\profile_test_surfconext\lib\selenium-java-client-driver.jar;C:\Selenium\Workspace\profile_test_surfconext\lib\junit.jar;C:\ant\lib\junit-4.8.1.jar;C:\ant\lib\ant-launcher.jar;C:\ant\lib\ant.jar;C:\ant\lib\ant-junit.jar;C:\ant\lib\ant-junit4.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.Verifyprofile filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Verifyprofile.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Verifyprofile.xml crashfile=C:\Selenium\Workspace\profile_test_surfconext\junitvmwatcher198011655755956413.properties propsfile=C:\Selenium\Workspace\profile_test_surfconext\junit2278493777093447363.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.Verifyprofile filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Verifyprofile.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Verifyprofile.xml crashfile=C:\Selenium\Workspace\profile_test_surfconext\junitvmwatcher649522615548997463.properties propsfile=C:\Selenium\Workspace\profile_test_surfconext\junit7265776195848907305.properties" />
 
           <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
 
@@ -459,7 +459,7 @@
 
       </properties>
 
-      <testcase classname="com.portal_ui.Verifyprofile" name="testVerify" time="23.596" />
+      <testcase classname="com.portal_ui.Verifyprofile" name="testVerify" time="23.408" />
 
       <system-out><![CDATA[]]></system-out>
 

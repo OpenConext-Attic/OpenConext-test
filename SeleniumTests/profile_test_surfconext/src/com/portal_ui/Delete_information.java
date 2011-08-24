@@ -21,7 +21,13 @@ import com.portal_ui.Login;
 public class Delete_information extends Login {
 		
 	public void testDelete() throws Exception {
+		try {
 		login();
 		selenium.click("link=Delete my SURFconext profile!");
 	}
+		catch (Exception e) {
+			Screenshot();
+			throw new Error(e);
+		}
+    }
 }

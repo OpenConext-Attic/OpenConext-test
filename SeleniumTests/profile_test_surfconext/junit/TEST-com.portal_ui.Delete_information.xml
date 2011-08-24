@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="surfnet-PC" name="com.portal_ui.Delete_information" tests="1" time="16.533" timestamp="2011-08-15T14:36:16">
+<testsuite errors="0" failures="0" hostname="surfnet-PC" name="com.portal_ui.Delete_information" tests="1" time="16.63" timestamp="2011-08-22T08:19:24">
   <properties>
     <property name="java.vendor" value="Sun Microsystems Inc."></property>
     <property name="sun.java.launcher" value="SUN_STANDARD"></property>
@@ -73,7 +73,7 @@
     <property name="java.vm.vendor" value="Sun Microsystems Inc."></property>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"></property>
     <property name="java.class.path" value="C:\Selenium\Workspace\profile_test_surfconext\bin;C:\Selenium\Workspace\profile_test_surfconext\lib\selenium-server.jar;C:\Selenium\Workspace\profile_test_surfconext\lib\selenium-java-client-driver.jar;C:\Selenium\Workspace\profile_test_surfconext\lib\junit.jar;C:\ant\lib\junit-4.8.1.jar;C:\ant\lib\ant-launcher.jar;C:\ant\lib\ant.jar;C:\ant\lib\ant-junit.jar;C:\ant\lib\ant-junit4.jar"></property>
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.Delete_information filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Delete_information.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Delete_information.xml crashfile=C:\Selenium\Workspace\profile_test_surfconext\junitvmwatcher4746155580625941583.properties propsfile=C:\Selenium\Workspace\profile_test_surfconext\junit8083101463569006512.properties"></property>
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.Delete_information filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Delete_information.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Selenium\Workspace\profile_test_surfconext\junit\TEST-com.portal_ui.Delete_information.xml crashfile=C:\Selenium\Workspace\profile_test_surfconext\junitvmwatcher4718163835848449620.properties propsfile=C:\Selenium\Workspace\profile_test_surfconext\junit2332756328297377032.properties"></property>
     <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010"></property>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"></property>
     <property name="ant.file.type" value="file"></property>
@@ -114,7 +114,7 @@
     <property name="ant.project.invoked-targets" value="sendmail"></property>
     <property name="env.PROCESSOR_LEVEL" value="6"></property>
   </properties>
-  <testcase classname="com.portal_ui.Delete_information" name="testDelete" time="16.392"></testcase>
+  <testcase classname="com.portal_ui.Delete_information" name="testDelete" time="16.489"></testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
