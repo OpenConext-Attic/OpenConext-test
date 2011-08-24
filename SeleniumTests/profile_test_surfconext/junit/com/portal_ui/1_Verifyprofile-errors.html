@@ -1,13 +1,13 @@
 <html xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils" xmlns:lxslt="http://xml.apache.org/xslt">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Unit Test Results: com.portal_ui.Delete_information</title>
+<title>Unit Test Results: com.portal_ui.Verifyprofile</title>
 <link title="Style" type="text/css" rel="stylesheet" href="../../stylesheet.css">
 <script language="JavaScript" type="text/javascript">
         var TestCases = new Array();
         var cur;
         
-    cur = TestCases['com.portal_ui.Delete_information'] = new Array();
+    cur = TestCases['com.portal_ui.Verifyprofile'] = new Array();
     
         cur['ant.core.lib'] = 'C:\\ant\\lib\\ant.jar';
     
@@ -42,8 +42,6 @@
         cur['env._JAVACMD'] = 'C:\\Program Files\\Java\\jdk1.6.0_26\\bin\\java.exe';
     
         cur['env._USE_CLASSPATH'] = 'no';
-    
-        cur['env.=::'] = '::\\';
     
         cur['env.=C:'] = 'C:\\Selenium\\Workspace\\profile_test_surfconext';
     
@@ -205,7 +203,7 @@
     
         cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
     
-        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.Delete_information filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\\Selenium\\Workspace\\profile_test_surfconext\\junit\\TEST-com.portal_ui.Delete_information.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\\Selenium\\Workspace\\profile_test_surfconext\\junit\\TEST-com.portal_ui.Delete_information.xml crashfile=C:\\Selenium\\Workspace\\profile_test_surfconext\\junitvmwatcher4718163835848449620.properties propsfile=C:\\Selenium\\Workspace\\profile_test_surfconext\\junit2332756328297377032.properties';
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.portal_ui.Verifyprofile filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\\Selenium\\Workspace\\profile_test_surfconext\\junit\\TEST-com.portal_ui.Verifyprofile.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\\Selenium\\Workspace\\profile_test_surfconext\\junit\\TEST-com.portal_ui.Verifyprofile.xml crashfile=C:\\Selenium\\Workspace\\profile_test_surfconext\\junitvmwatcher2356859337391811519.properties propsfile=C:\\Selenium\\Workspace\\profile_test_surfconext\\junit2266953853874644808.properties';
     
         cur['sun.java.launcher'] = 'SUN_STANDARD';
     
@@ -268,26 +266,29 @@
 </tr>
 </table>
 <hr size="1">
-<h3>Class com.portal_ui.Delete_information</h3>
+<h3>Class com.portal_ui.Verifyprofile</h3>
 <table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
 <tr valign="top">
 <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
 </tr>
-<tr valign="top" class="Pass">
-<td><a href="0_Delete_information.html" title="Display all tests">Delete_information</a></td><td><a href="0_Delete_information.html" title="Display all tests">1</a></td><td>0</td><td>0</td><td>16.630</td><td>2011-08-22T08:19:24</td><td>surfnet-PC</td>
+<tr valign="top" class="Error">
+<td><a href="1_Verifyprofile.html" title="Display all tests">Verifyprofile</a></td><td><a href="1_Verifyprofile.html" title="Display all tests">1</a></td><td><a href="1_Verifyprofile-errors.html" title="Display only errors">1</a></td><td>0</td><td>1.163</td><td>2011-08-17T12:36:12</td><td>surfnet-PC</td>
 </tr>
 </table>
-<h2>Tests</h2>
+<h2>Errors</h2>
 <table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
 <tr valign="top">
 <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
 </tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testDelete"></a>testDelete</td><td>Success</td><td></td><td>16.489</td>
+<tr valign="top" class="Error">
+<td><a name="testVerify"></a>testVerify</td><td>Error</td><td>Could not contact Selenium Server; have you started it on 'localhost:4444' ? Read more at http://seleniumhq.org/projects/remote-control/not-started.html Connection refused: connect<br>
+<br>
+<code>java.lang.RuntimeException: Could not contact Selenium Server; have you started it on 'localhost:4444' ?<br>Connection refused: connect<br>	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:97)<br>	at com.thoughtworks.selenium.SeleneseTestBase.setUp(SeleneseTestBase.java:119)<br>	at com.thoughtworks.selenium.SeleneseTestBase.setUp(SeleneseTestBase.java:100)<br>	at com.thoughtworks.selenium.SeleneseTestCase.setUp(SeleneseTestCase.java:78)<br>	at com.portal_ui.BaseTest.setUp(BaseTest.java:53)<br>	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)<br>
+</code></td><td>1.026</td>
 </tr>
 </table>
 <div class="Properties">
-<a href="javascript:displayProperties('com.portal_ui.Delete_information');">
+<a href="javascript:displayProperties('com.portal_ui.Verifyprofile');">
                     Properties &raquo;
                 </a>
 </div>

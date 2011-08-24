@@ -38,6 +38,8 @@ public class Login extends BaseTest {
 					selenium.click("id=accept_terms_button");
 			}
 			catch (Exception e) {
+				Screenshot();
+				throw new Error(e);
 			}
 			Thread.sleep(1000);
 		}

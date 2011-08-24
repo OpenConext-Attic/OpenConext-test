@@ -16,20 +16,23 @@
 
 package com.portal_ui;
 
-import com.portal_ui.Login;
-
 public class Verifyprofile extends Login {
-		
+
 	public void testVerify() throws Exception {
-		login();
-		verifyTrue(selenium.isTextPresent("conexttest"));
-		verifyTrue(selenium.isTextPresent("Conext Test"));
-		verifyTrue(selenium.isTextPresent("conexttest@gmail.com"));
-		verifyTrue(selenium.isTextPresent("test.surfguest.nl"));
-		verifyTrue(selenium.isTextPresent("conexttest@SURFguest.nl"));
-		verifyTrue(selenium.isTextPresent("guest"));
-		verifyTrue(selenium.isTextPresent("attribute-manipulations/manipulations.php"));
-		verifyTrue(selenium.isTextPresent("urn:collab:person:test.surfguest.nl:conexttest"));
-//		verifyTrue(selenium.isTextPresent("Delete my information!"));
+		try {
+			login();
+			assertTrue(selenium.isTextPresent("conexttest"));
+			assertTrue(selenium.isTextPresent("Conext Test"));
+			assertTrue(selenium.isTextPresent("conexttest@gmail.com"));
+			assertTrue(selenium.isTextPresent("test.surfguest.nl"));
+			assertTrue(selenium.isTextPresent("conexttest@SURFguest.nl"));
+			assertTrue(selenium.isTextPresent("guest"));
+			assertTrue(selenium.isTextPresent("attribute-manipulations/manipulations.php"));
+			assertTrue(selenium.isTextPresent("urn:collab:person:test.surfguest.nl:conexttest"));
+		}
+		catch (Error e) {
+			Screenshot();
+			throw new Error(e);
+		}
 	}
 }

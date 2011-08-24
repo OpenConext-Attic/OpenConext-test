@@ -17,6 +17,7 @@
 package com.portal_ui;
 
 import java.io.File;
+import java.util.Calendar;
 
 import com.thoughtworks.selenium.SeleneseTestCase;
 import com.thoughtworks.selenium.Wait;
@@ -71,5 +72,18 @@ public class BaseTest extends SeleneseTestCase {
             }
         }.wait("Timeout while waiting for element " + waitingElement);
     }
+	public void Screenshot() {
+		Calendar cal = Calendar.getInstance();
+		int dag = cal.get(Calendar.DAY_OF_MONTH);
+		int maand = cal.get(Calendar.MONTH) + 1;
+		int jaar = cal.get(Calendar.YEAR);
+		int uur = cal.get(Calendar.HOUR_OF_DAY);
+		int minuut = cal.get(Calendar.MINUTE);
+		int seconde = cal.get(Calendar.SECOND);
 
+		selenium.captureEntirePageScreenshot("C:\\Selenium\\Workspace\\teams_test_surfconext\\report\\Screens\\" + "selenium error on "
+				+ selenium.getTitle() + " at " + uur + ";" + minuut + ";"
+				+ seconde + " on " + dag + "-" + maand + "-" + jaar + ".PNG",
+				"");
+	}
 }
