@@ -82,7 +82,7 @@
 	<target name="sendmail" depends="Test_UI, junitreport">
 		<mail enableStartTLS="true" mailhost="smtp.gmail.com" mailport="587" messagemimetype="text/html" subject="Selenium Test portal ${TODAY_UK}" user="conexttest@gmail.com" ssl="false" password="surfconext">
 			<from address="conexttest@gmail.com" />
-			<to address="jeev@surfnet.nl" />
+			<to address="ivab@surfnet.nl" />
 			<replyto address="ivab@surfnet.nl" />
 			<message src="config/message.txt" />
 			<attachments>
