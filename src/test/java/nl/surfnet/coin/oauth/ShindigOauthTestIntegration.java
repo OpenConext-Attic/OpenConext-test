@@ -52,8 +52,11 @@ public class ShindigOauthTestIntegration {
   // private static final String BASE_URL =
   // "https://gadgets.dev.coin.surf.net/social/";
   // https://engine-internal.dev.surfconext.nl/social/people/urn%3Acollab%3Aperson%3Atest.surfguest.nl%3Asmibuildings?fields=all
-  private static final String BASE_URL = "https://os.test.surfconext.nl/social/";
-  // private static final String BASE_URL = "http://localhost:8080/social/";
+  //private static final String BASE_URL = "https://os.test.surfconext.nl/social/";
+
+  //  private static final String BASE_URL = "http://localhost:8080/vo/someVo/social/";
+  
+  private static final String BASE_URL = "http://localhost:8080/vo/devWorldData/social/";
   /*
    * Proteon key-secret
    */
@@ -62,11 +65,17 @@ public class ShindigOauthTestIntegration {
   // private final static String CONSUMER_SECRET =
   // "4FA60498-9204-4D6A-929A-8DC70822F9CD";
   private static final String restTemplate = "people/{guid}/{selector}/{pid}";
- // private final static String CONSUMER_KEY = "http://coin.edia.nl.SomeGadget";
-private final static String CONSUMER_KEY = "https://teams.test.surfconext.nl/teams/teams.xml";
-    
-  private final static String CONSUMER_SECRET = "mysecret";
-  private final static String OPEN_SOCIAL_ID = "urn:collab:person:test.surfguest.nl:oharsta";
+  // private final static String CONSUMER_KEY =
+  // "http://coin.edia.nl.SomeGadget";
+  private final static String CONSUMER_KEY = "https://teams.test.surfconext.nl/teams/teams.xml";
+  // private final static String CONSUMER_KEY = "foodle";
+
+  //private final static String CONSUMER_SECRET = "mysecret";
+   private final static String CONSUMER_SECRET = "2e/UbBTlwdTRoF5jbg5NDexU";
+  // private final static String OPEN_SOCIAL_ID =
+  // "urn:collab:person:test.surfguest.nl:oharsta";
+
+  private final static String OPEN_SOCIAL_ID = "urn:collab:person:test.surfguest.nl:peterclijsters";
 
   @Test
   public void testOAuthClient() throws RequestException, IOException {
@@ -77,7 +86,7 @@ private final static String CONSUMER_KEY = "https://teams.test.surfconext.nl/tea
     Provider provider = new ShindigProvider(true);
 
     provider.setRestEndpoint(BASE_URL + "rest/");
-    provider.setRpcEndpoint(null);// BASE_URL + "rpc/");
+    //provider.setRpcEndpoint(BASE_URL + "rpc/");
     provider.setVersion("0.9");
 
     AuthScheme scheme = new OAuth2LeggedScheme(CONSUMER_KEY, CONSUMER_SECRET,
@@ -86,45 +95,46 @@ private final static String CONSUMER_KEY = "https://teams.test.surfconext.nl/tea
     Client client = new Client(provider, scheme);
 
     Request request = PeopleService.getUser(OPEN_SOCIAL_ID);
-    Response response = client.send(request);
-    Person person = response.getEntry();
-    boolean guest = person.isGuest();
 
-    request = PeopleService.getFriends();
-    response = client.send(request);
+//    request = GroupsService.getGroups(OPEN_SOCIAL_ID);
+//    Response response = client.send(request);
+//
+//    List<Group> groups = response.getEntries();
+//    int size = groups.size();
+//    assertEquals(4, size);
 
-    List<Person> friends = response.getEntries();
-    assertEquals(1, friends.size());
-    String id = friends.get(0).getId();
-    assertEquals(OPEN_SOCIAL_ID, id);
-
-    request = GroupsService.getGroups(OPEN_SOCIAL_ID);
-    response = client.send(request);
-
-    List<Group> groups = response.getEntries();
-    int size = groups.size();
-    assertEquals(_EXPECTED_GROUP_COUNT, size);
-
-    Activity activity = new Activity();
-    activity.setBody("body_test");
-    activity.setBodyId("body_id");
-    activity.setField("externalId", "groupId");
-    activity.setField("url", "abcdef");
-    activity.setTitle("title");
-    activity.setTitleId("titleId");
-    request = ActivitiesService.createActivity(activity);
-    response = client.send(request);
-    List<Model> entries = response.getEntries();
-    // assertEquals(1,entries.size());
-
-    request = new Request(restTemplate, "people.get", "GET");
-    request.setModelClass(Person.class);
-    request.setGuid("urn:collab:person:surfnet.nl:hansz");
-    request.setSelector("test:3tu_identity_management");
-    List<Person> persons = client.send(request).getEntries();
-    assertTrue(persons.size() > 0);
-    person = persons.get(0);
-    assertTrue(person.getEmail().contains("@"));
+    //    for (Group group : groups) {
+//      request = new Request(restTemplate, "people.get", "GET");
+//      request.setModelClass(Person.class);
+//      request.setGuid(OPEN_SOCIAL_ID);
+//      request.setSelector(group.getId());
+//      List<Person> persons = client.send(request).getEntries();
+//      System.out.println("Group " + group.getId() + " members:"
+//          + persons.size());
+//    }
+    //
+    // Activity activity = new Activity();
+    // activity.setBody("body_test");
+    // activity.setBodyId("body_id");
+    // activity.setField("externalId", "groupId");
+    // activity.setField("url", "abcdef");
+    // activity.setTitle("title");
+    // activity.setTitleId("titleId");
+    // request = ActivitiesService.createActivity(activity);
+    // response = client.send(request);
+    // List<Model> entries = response.getEntries();
+    // // assertEquals(1,entries.size());
+    //
+     request = new Request(restTemplate, "people.get", "GET");
+     request.setModelClass(Person.class);
+     request.setGuid(OPEN_SOCIAL_ID);
+     // request.setSelector("nl:surfnet:diensten:a-team");
+ //    request.setSelector("nl:surfnet:diensten:a-team");
+     List<Person> persons = client.send(request).getEntries();
+     assertTrue(persons.size() > 0);
+     Person personFromGroup = persons.get(0);
+     assertTrue(personFromGroup.getEmail().contains("@"));
+     System.out.println(personFromGroup);
   }
 
 }

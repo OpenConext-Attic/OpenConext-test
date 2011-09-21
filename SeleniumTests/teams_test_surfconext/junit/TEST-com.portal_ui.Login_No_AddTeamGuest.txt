@@ -1,4 +1,0 @@
-Testsuite: com.portal_ui.Login_No_AddTeamGuest
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 15.002 sec
-
-Testcase: testlogin_AddTeam took 14.877 sec

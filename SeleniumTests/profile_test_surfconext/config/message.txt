@@ -1,1 +1,0 @@
-The Selenium test has completed. See <a href="file://localhost/home/ivo/code/projects/SURFconext/SeleniumTests/Test_UI/junit/index.html"> report </a> 

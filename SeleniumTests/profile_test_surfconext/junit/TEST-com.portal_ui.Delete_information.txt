@@ -1,4 +1,0 @@
-Testsuite: com.portal_ui.Delete_information
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 16.63 sec
-
-Testcase: testDelete took 16.489 sec

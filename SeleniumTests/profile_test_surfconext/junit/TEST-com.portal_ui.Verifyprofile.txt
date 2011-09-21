@@ -1,4 +1,0 @@
-Testsuite: com.portal_ui.Verifyprofile
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 23.549 sec
-
-Testcase: testVerify took 23.408 sec
