@@ -1,4 +1,0 @@
-Testsuite: com.portal_ui.TestAssignTeam
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 31.017 sec
-
-Testcase: testAssignTeam took 30.845 sec
