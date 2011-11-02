@@ -27,7 +27,9 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.junit.Assert;
 import org.junit.Test;
+import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 
 /**
  * 
@@ -57,6 +59,25 @@ public class MockSoapServerTest extends AbstractMockHttpServerTest {
     IOUtils.copy(is, output);
     Assert.assertEquals(IOUtils.toString(responseResource.getInputStream()),
         output.toString());
+  }
+
+  /**
+   * Test the MockHttpServer.
+   * 
+   * @throws Exception
+   */
+  @Test
+  public void testMockHappyFlowWithMultipleResources() throws Exception {
+    Resource resource1 = new ByteArrayResource("value".getBytes());
+    Resource resource2 =  new ByteArrayResource("value2".getBytes());
+    super.setResponseResource(new Resource[] { resource1, resource2 });
+    HttpResponse response1 = new DefaultHttpClient().execute(new HttpGet(
+        "http://localhost:8088/testUrl"));
+    HttpResponse response2 = new DefaultHttpClient().execute(new HttpGet(
+        "http://localhost:8088/testUrl"));
+    String s1 = IOUtils.toString(response1.getEntity().getContent());
+    String s2 = IOUtils.toString(response2.getEntity().getContent());
+    Assert.assertFalse(s1.equals(s2));
   }
 
 }

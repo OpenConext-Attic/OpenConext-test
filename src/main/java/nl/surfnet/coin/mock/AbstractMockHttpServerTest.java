@@ -55,5 +55,15 @@ public abstract class AbstractMockHttpServerTest {
   protected void setResponseResource(Resource responseResource) {
     server.getHandler().setResponseResource(responseResource);
   }
+  
+  /**
+   * Set the expected response on the Handler
+   * 
+   * @param responseResource
+   *          the resource of the file containing the xml response
+   */
+  protected void setResponseResource(Resource[] responseResource) {
+    server.getHandler().setResponseResource(responseResource);
+  }
 
 }

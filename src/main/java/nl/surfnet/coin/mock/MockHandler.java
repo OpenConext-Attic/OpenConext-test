@@ -50,7 +50,7 @@ public class MockHandler extends AbstractHandler {
    * accessible through the server instance and must be accessible from the
    * classpath
    */
-  private Resource responseResource;
+  private Resource[] responseResource;
 
   /**
    * Constructor
@@ -84,7 +84,13 @@ public class MockHandler extends AbstractHandler {
    */
   protected InputStream getResponseInputStream(String requestURI)
       throws IOException {
-    return responseResource.getInputStream();
+     InputStream inputStream = responseResource[0].getInputStream();
+     if (responseResource.length > 1) {
+       Resource[] stack = new Resource[this.responseResource.length - 1];
+       System.arraycopy(this.responseResource, 1, stack, 0, this.responseResource.length-1);
+       this.responseResource = stack;
+     }
+     return inputStream;
   }
 
   /**
@@ -95,8 +101,16 @@ public class MockHandler extends AbstractHandler {
    *          the responseResource
    */
   public void setResponseResource(Resource responseResource) {
+    this.responseResource = new Resource[]{responseResource};
+  }
+  
+  /**
+   * @param responseResource
+   */
+  public void setResponseResource(Resource[] responseResource) {
     this.responseResource = responseResource;
   }
+
 
   /*
    * (non-Javadoc)
@@ -118,7 +132,7 @@ public class MockHandler extends AbstractHandler {
    */
   private void addContentHeader(HttpServletResponse response) {
     String contentType;
-    String description = responseResource.getDescription();
+    String description = responseResource[0].getDescription();
     // poor man's solution, but it works for most Resource implementation
     if (description.contains("json")) {
       contentType = "application/json";
@@ -135,8 +149,9 @@ public class MockHandler extends AbstractHandler {
    * Check the response to render back
    */
   private void invariant() {
-    if (this.responseResource == null) {
+    if (this.responseResource == null || this.responseResource.length == 0) {
       throw new RuntimeException("No responseResource set");
     }
   }
+
 }
