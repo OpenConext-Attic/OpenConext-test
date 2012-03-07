@@ -108,12 +108,7 @@
       <artifactId>commons-io</artifactId>
       <version>1.4</version>
     </dependency>
-    <dependency>
-      <groupId>commons-codec</groupId>
-      <artifactId>commons-codec</artifactId>
-      <version>1.4</version>
-    </dependency>
-    <!-- The next two slf4j dependencies are the ones we want to use. Other 
+    <!-- The next two slf4j dependencies are the ones we want to use. Other
       should be excluded. -->
     <dependency>
       <groupId>org.slf4j</groupId>
