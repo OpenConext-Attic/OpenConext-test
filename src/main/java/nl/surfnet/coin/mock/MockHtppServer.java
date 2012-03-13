@@ -16,8 +16,10 @@
 
 package nl.surfnet.coin.mock;
 
-import org.mortbay.jetty.Server;
-import org.mortbay.jetty.bio.SocketConnector;
+import org.eclipse.jetty.server.Handler;
+import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.bio.SocketConnector;
+import org.eclipse.jetty.server.handler.HandlerCollection;
 
 /**
  * Very simple {@link Server} to mock http traffic
@@ -46,7 +48,11 @@ public class MockHtppServer {
     connector.setPort(port);
     this.server.addConnector(connector);
     this.handler = createHandler(server);
-    this.server.addHandler(handler);
+//
+//      HandlerCollection handlers = new HandlerCollection();
+//      handlers.setHandlers(new Handler[]{handler});
+
+    this.server.setHandler(handler);
   }
 
   /**
