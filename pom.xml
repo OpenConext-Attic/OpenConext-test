@@ -26,7 +26,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <application.distributionManagement.siteUrl>file:///var/opt/maven/sites/coin-test/${project.version}</application.distributionManagement.siteUrl>
     <spring.version>3.0.3.RELEASE</spring.version>
-    <jetty.version>6.1.26</jetty.version>
+      <jetty.version>8.0.4.v20111024</jetty.version>
     <httpclient.version>4.0.1</httpclient.version>
     <opensocialclient.version>2.1.0-coin-SNAPSHOT</opensocialclient.version>
   </properties>
@@ -110,16 +110,16 @@
     </dependency>
     <!-- The next two slf4j dependencies are the ones we want to use. Other
       should be excluded. -->
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.5.8</version>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <version>1.5.8</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>org.slf4j</groupId>-->
+      <!--<artifactId>slf4j-api</artifactId>-->
+      <!--<version>1.5.8</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.slf4j</groupId>-->
+      <!--<artifactId>slf4j-log4j12</artifactId>-->
+      <!--<version>1.5.8</version>-->
+    <!--</dependency>-->
 
     <dependency>
       <groupId>com.google.code</groupId>
@@ -132,21 +132,22 @@
       <version>${httpclient.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.mortbay.jetty</groupId>
-      <artifactId>jetty</artifactId>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-server</artifactId>
       <version>${jetty.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.mortbay.jetty</groupId>
+      <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-util</artifactId>
       <version>${jetty.version}</version>
     </dependency>
+      <!--
     <dependency>
-      <groupId>org.mortbay.jetty</groupId>
+      <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-management</artifactId>
       <version>${jetty.version}</version>
     </dependency>
-
+-->
 
     <dependency>
       <groupId>org.springframework</groupId>
