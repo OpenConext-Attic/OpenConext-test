@@ -29,6 +29,8 @@ import org.eclipse.jetty.http.HttpMethods;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.io.Resource;
 
 /**
@@ -39,6 +41,8 @@ import org.springframework.core.io.Resource;
  * @author oharsta
  */
 public class MockHandler extends AbstractHandler {
+  private static final Logger logger = LoggerFactory
+      .getLogger(MockHandler.class);
 
     /*
     * The resource of the (XML, JSON etc) file that should be returned. It is
@@ -64,7 +68,10 @@ public class MockHandler extends AbstractHandler {
         ServletOutputStream outputStream = response.getOutputStream();
         String requestURI = request.getRequestURI();
         InputStream inputStream = getResponseInputStream(requestURI);
+    logger.debug("Received Http request ('" + requestURI + "')");
         if (request.getMethod().equals(HttpMethods.POST)) {
+      logger.debug("Received POST request ('"
+          + IOUtils.toString(request.getInputStream()) + "')");
         }
         IOUtils.copy(inputStream, outputStream);
         outputStream.flush();
