@@ -28,7 +28,6 @@
     <spring.version>3.0.3.RELEASE</spring.version>
     <jetty.version>8.0.4.v20111024</jetty.version>
     <httpclient.version>4.0.1</httpclient.version>
-    <opensocialclient.version>2.1.0-coin</opensocialclient.version>
     <slf4j.version>[1.6,)</slf4j.version>
   </properties>
   <scm>
@@ -121,11 +120,6 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.code</groupId>
-      <artifactId>opensocial-java-client</artifactId>
-      <version>${opensocialclient.version}</version>
-    </dependency>
-    <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
       <version>${httpclient.version}</version>
@@ -140,14 +134,6 @@
       <artifactId>jetty-util</artifactId>
       <version>${jetty.version}</version>
     </dependency>
-      <!--
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-management</artifactId>
-      <version>${jetty.version}</version>
-    </dependency>
--->
-
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
@@ -159,19 +145,5 @@
       <artifactId>spring-context</artifactId>
       <version>${spring.version}</version>
     </dependency>
-    <dependency>
-
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-core</artifactId>
-      <version>1.8.5</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.easymock</groupId>
-      <artifactId>easymock</artifactId>
-      <version>2.5.2</version>
-    </dependency>
-
   </dependencies>
 </project>
