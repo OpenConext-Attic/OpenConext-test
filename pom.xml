@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2011 SURFnet bv, The Netherlands
+  ~ Copyright 2012 SURFnet bv, The Netherlands
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -26,9 +26,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <application.distributionManagement.siteUrl>file:///var/opt/maven/sites/coin-test/${project.version}</application.distributionManagement.siteUrl>
     <spring.version>3.0.3.RELEASE</spring.version>
-      <jetty.version>8.0.4.v20111024</jetty.version>
+    <jetty.version>8.0.4.v20111024</jetty.version>
     <httpclient.version>4.0.1</httpclient.version>
-    <opensocialclient.version>2.1.0-coin-SNAPSHOT</opensocialclient.version>
+    <opensocialclient.version>2.1.0-coin</opensocialclient.version>
     <slf4j.version>[1.6,)</slf4j.version>
   </properties>
   <scm>
