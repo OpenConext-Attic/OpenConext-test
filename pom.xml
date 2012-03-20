@@ -31,8 +31,10 @@
     <slf4j.version>[1.6,)</slf4j.version>
   </properties>
   <scm>
-    <connection>scm:svn:https://svn.surfnet.nl/svn/coin-gui/coin-test/trunk</connection>
-  </scm>
+  	<connection>scm:git:git@github.com:OpenConext/OpenConext-test.git</connection>
+  	<url>scm:git:git@github.com:OpenConext/OpenConext-test.git</url>
+  	<developerConnection>scm:git:git@github.com:OpenConext/OpenConext-test.git</developerConnection>
+</scm>
   <distributionManagement>
     <repository>
       <id>coin-repo</id>
