@@ -64,7 +64,8 @@ public abstract class AbstractInMemoryDatabaseTest {
     BasicDataSource dataSource = new BasicDataSource();
     dataSource.setPassword("");
     dataSource.setUsername("sa");
-    dataSource.setUrl("jdbc:hsqldb:mem:coin");
+    String url = getDataSourceUrl();
+    dataSource.setUrl(url);
     dataSource.setDriverClassName("org.hsqldb.jdbcDriver");
 
     jdbcTemplate = new JdbcTemplate(dataSource);
@@ -81,6 +82,10 @@ public abstract class AbstractInMemoryDatabaseTest {
         jdbcTemplate.execute(s + ';');
       }
     }
+  }
+
+  protected String getDataSourceUrl() {
+    return "jdbc:hsqldb:mem:coin";
   }
 
   @After
