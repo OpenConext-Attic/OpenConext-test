@@ -11,13 +11,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.surfnet.coin</groupId>
   <artifactId>coin-test</artifactId>
-  <version>2.6-SNAPSHOT</version>
+  <version>2.8.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>coin-test</name>
   <description>coin-test</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <application.distributionManagement.siteUrl>file:///var/opt/maven/sites/coin-test/${project.version}</application.distributionManagement.siteUrl>
     <spring.version>3.1.1.RELEASE</spring.version>
     <jetty.version>8.0.4.v20111024</jetty.version>
     <httpclient.version>4.0.1</httpclient.version>
@@ -31,14 +30,14 @@
   </scm>
   <distributionManagement>
     <repository>
-      <id>coin-repo</id>
-      <name>coin-repo</name>
-      <url>dav:http://bamboo-dev.coin.surfnetlabs.nl</url>
+      <id>openconext-releases</id>
+      <name>OpenConext public releases repository</name>
+      <url>dav:https://build.surfconext.nl/repository/public/releases</url>
     </repository>
     <snapshotRepository>
-      <id>repo</id>
-      <name>Repository Name</name>
-      <url>dav:http://bamboo-dev.coin.surfnetlabs.nl</url>
+      <id>openconext-snapshots</id>
+      <name>OpenConext public snapshot repository</name>
+      <url>dav:https://build.surfconext.nl/repository/public/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
   <repositories>
@@ -47,11 +46,23 @@
         <enabled>true</enabled>
       </snapshots>
       <releases>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
       </releases>
-      <id>coin-repo</id>
-      <name>COIN Repository</name>
-      <url>http://bamboo-dev.coin.surfnetlabs.nl</url>
+      <id>openconext-snapshots</id>
+      <name>OpenConext public snapshot repository</name>
+      <url>https://build.surfconext.nl/repository/public/snapshots</url>
+    </repository>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <id>openconext-releases</id>
+      <name>OpenConext public releases repository</name>
+      <url>https://build.surfconext.nl/repository/public/releases</url>
     </repository>
   </repositories>
 
