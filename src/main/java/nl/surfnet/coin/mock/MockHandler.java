@@ -50,6 +50,11 @@ public class MockHandler extends AbstractHandler {
    */
   private Resource[] responseResource;
 
+  /*
+   * Status of the response send
+   */
+  private int status;
+
   /**
    * Constructor
    * 
@@ -70,6 +75,9 @@ public class MockHandler extends AbstractHandler {
     logger.debug("Received Http request ('" + requestURI + "')");
     if (request.getMethod().equals(HttpMethods.POST)) {
       logger.debug("Received POST request ('" + IOUtils.toString(request.getInputStream()) + "')");
+    }
+    if (status != 0) {
+      response.setStatus(status);
     }
     IOUtils.copy(inputStream, outputStream);
     outputStream.flush();
@@ -146,6 +154,14 @@ public class MockHandler extends AbstractHandler {
     if (this.responseResource == null || this.responseResource.length == 0) {
       throw new RuntimeException("No responseResource set");
     }
+  }
+
+  /**
+   * @param status
+   */
+  public void setStatus(int status) {
+    this.status = status;
+    
   }
 
 }

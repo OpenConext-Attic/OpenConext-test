@@ -55,7 +55,7 @@ public abstract class AbstractMockHttpServerTest {
   protected void setResponseResource(Resource responseResource) {
     server.getHandler().setResponseResource(responseResource);
   }
-  
+
   /**
    * Set the expected response on the Handler
    * 
@@ -64,6 +64,10 @@ public abstract class AbstractMockHttpServerTest {
    */
   protected void setResponseResource(Resource[] responseResource) {
     server.getHandler().setResponseResource(responseResource);
+  }
+
+  protected void setStatus(int status) {
+    server.getHandler().setStatus(status);
   }
 
 }

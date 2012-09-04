@@ -16,6 +16,8 @@
 
 package nl.surfnet.coin.mock;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.InputStream;
 import java.io.OutputStream;
 
@@ -69,7 +71,7 @@ public class MockSoapServerTest extends AbstractMockHttpServerTest {
   @Test
   public void testMockHappyFlowWithMultipleResources() throws Exception {
     Resource resource1 = new ByteArrayResource("value".getBytes());
-    Resource resource2 =  new ByteArrayResource("value2".getBytes());
+    Resource resource2 = new ByteArrayResource("value2".getBytes());
     super.setResponseResource(new Resource[] { resource1, resource2 });
     HttpResponse response1 = new DefaultHttpClient().execute(new HttpGet(
         "http://localhost:8088/testUrl"));
@@ -78,6 +80,16 @@ public class MockSoapServerTest extends AbstractMockHttpServerTest {
     String s1 = IOUtils.toString(response1.getEntity().getContent());
     String s2 = IOUtils.toString(response2.getEntity().getContent());
     Assert.assertFalse(s1.equals(s2));
+  }
+
+  @Test
+  public void testStatus() throws Exception {
+    super.setResponseResource(new ByteArrayResource("bye".getBytes()));
+    super.setStatus(403);
+    HttpClient client = new DefaultHttpClient();
+    HttpResponse response = client.execute(new HttpGet(
+        "http://localhost:8088/testUrl"));
+    assertEquals(403, response.getStatusLine().getStatusCode());
   }
 
 }
