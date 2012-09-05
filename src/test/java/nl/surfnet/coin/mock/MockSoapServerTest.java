@@ -90,6 +90,10 @@ public class MockSoapServerTest extends AbstractMockHttpServerTest {
     HttpResponse response = client.execute(new HttpGet(
         "http://localhost:8088/testUrl"));
     assertEquals(403, response.getStatusLine().getStatusCode());
+    client = new DefaultHttpClient();
+    response = client.execute(new HttpGet(
+        "http://localhost:8088/testUrl"));
+    assertEquals(200, response.getStatusLine().getStatusCode());
   }
 
 }

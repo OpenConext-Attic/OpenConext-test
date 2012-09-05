@@ -78,6 +78,8 @@ public class MockHandler extends AbstractHandler {
     }
     if (status != 0) {
       response.setStatus(status);
+      //reset
+      status = 0;
     }
     IOUtils.copy(inputStream, outputStream);
     outputStream.flush();
