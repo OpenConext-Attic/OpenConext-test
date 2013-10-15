@@ -28,7 +28,7 @@
     <jetty.version>8.0.4.v20111024</jetty.version>
     <httpclient.version>4.1</httpclient.version>
     <slf4j.version>1.7.2</slf4j.version>
-    <hsqldb.version>2.2.8</hsqldb.version>
+    <hsqldb.version>2.3.1</hsqldb.version>
   </properties>
   <scm>
     <connection>scm:git:git@github.com:OpenConext/OpenConext-test.git</connection>
@@ -79,8 +79,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.3.2</version>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.7</source>
+          <target>1.7</target>
         </configuration>
       </plugin>
       <plugin>
