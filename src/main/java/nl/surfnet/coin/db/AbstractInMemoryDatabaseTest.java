@@ -18,8 +18,6 @@
  */
 package nl.surfnet.coin.db;
 
-import nl.surfnet.coin.mock.MockHandler;
-
 import org.apache.commons.dbcp.BasicDataSource;
 import org.apache.commons.io.IOUtils;
 import org.junit.After;
@@ -32,8 +30,10 @@ import org.springframework.util.StringUtils;
 
 /**
  * Abstract class for running in-memory unit tests
- * 
+ *
+ * @deprecated Please use Flyway migrations or DbUnit for tests
  */
+@Deprecated
 public abstract class AbstractInMemoryDatabaseTest {
 
   private static final Logger logger = LoggerFactory.getLogger(AbstractInMemoryDatabaseTest.class);

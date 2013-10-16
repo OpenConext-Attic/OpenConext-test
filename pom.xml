@@ -18,7 +18,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.surfnet.coin</groupId>
   <artifactId>coin-test</artifactId>
-  <version>3.2.0-SNAPSHOT</version>
+  <version>3.10.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>coin-test</name>
   <description>coin-test</description>

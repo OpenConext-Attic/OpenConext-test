@@ -16,14 +16,6 @@
 
 package nl.surfnet.coin.mock;
 
-import java.io.IOException;
-import java.io.InputStream;
-
-import javax.servlet.ServletException;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.io.IOUtils;
 import org.eclipse.jetty.http.HttpMethods;
 import org.eclipse.jetty.server.Request;
@@ -33,13 +25,22 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.io.Resource;
 
+import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.InputStream;
+
 /**
  * {@link MockHandler} is a very simple {@link AbstractHandler} that returns
  * content based on the configuration in the test classes. This class is NOT
  * thread safe.
  * 
  * @author oharsta
+ * @deprecated Please use httpclient's LocalTestServer which has exactly this behaviour. (maven classifier: 'tests')
  */
+@Deprecated
 public class MockHandler extends AbstractHandler {
   private static final Logger logger = LoggerFactory.getLogger(MockHandler.class);
 

@@ -27,9 +27,10 @@ import org.springframework.core.io.Resource;
  * The idea behind this class is that http responses can be tested (regardless
  * of the input request).
  * 
- * 
- * 
+ *
+ * @deprecated Please use httpclient's LocalTestServer which has exactly this behaviour. (maven classifier: 'tests')
  */
+@Deprecated
 public abstract class AbstractMockHttpServerTest {
   /*
    * The Server that handles the Soap calls

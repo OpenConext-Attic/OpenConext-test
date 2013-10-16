@@ -16,15 +16,15 @@
 
 package nl.surfnet.coin.mock;
 
-import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.bio.SocketConnector;
-import org.eclipse.jetty.server.handler.HandlerCollection;
 
 /**
  * Very simple {@link Server} to mock http traffic
- * 
+ *
+ * @deprecated Please use httpclient's LocalTestServer which has exactly this behaviour. (maven classifier: 'tests')
  */
+@Deprecated
 public class MockHtppServer {
   private Server server;
   private MockHandler handler;
